@@ -104,3 +104,20 @@ nav li:first-of-type a {
 .indexBranding {
     background-color: $lightSage;
 }
+
+.brandingContainer {
+    width: calc(50% - 30px);
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+// Third Section Styling
+
+.thirdSection {
+    text-align: center;
+        img {
+            border-radius: 50%;
+        }
+
+}

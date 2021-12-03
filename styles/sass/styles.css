@@ -323,4 +323,18 @@ nav li:first-of-type a {
 
 .indexBranding {
   background-color: #c3dab7;
+}
+
+.brandingContainer {
+  width: calc(50% - 30px);
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+.thirdSection {
+  text-align: center;
+}
+.thirdSection img {
+  border-radius: 50%;
 }/*# sourceMappingURL=styles.css.map */
