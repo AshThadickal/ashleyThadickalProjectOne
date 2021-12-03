@@ -1,0 +1,106 @@
+@import "_setup";
+@import "_functions";
+@import "_nav";
+
+
+// * {
+//     margin: 0;
+//     padding: 0;
+// }
+
+// Typography
+
+html {
+    @include fontSize ($font, 125%, 400)
+}
+
+h1,
+h2,
+h3,
+a {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 1.85rem;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+}
+
+h2 {
+    font-size: 0.9rem;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+}
+
+button, 
+nav {
+   font-size: 0.7rem;
+   line-height: 24px;
+   letter-spacing: 0.7px; 
+}
+
+body {
+    @include fontSize ($bodyFont, 0.9rem, 400);
+}
+
+// General Styles
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+// Header Styling
+
+.indexHeader {
+    background-image: url(../../assets/home-1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.indexNav nav {
+    display: flex;
+    justify-content: space-around;
+        ul {
+            display: flex;
+            align-items: center;
+        }
+        li {
+           margin-left: 30px; 
+        }
+        i {
+           margin-left: 20px; 
+        }
+        h2 {
+            margin: 15px 30px;
+        }
+}
+
+nav li:first-of-type a {
+    text-decoration: line-through;
+}
+
+// Branding Section Styling
+
+.indexBranding {
+    background-color: $lightSage;
+}

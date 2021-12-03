@@ -1,0 +1,16 @@
+// Colours
+$lightSage: #c3dab7;
+$white: #fff;
+$whiteTwo: #f6f6f6;
+$black: #333;
+
+// Typography
+$font: 'Montserrat', sans-serif;
+$bodyFont: 'Open Sans', sans-serif;
+
+@mixin fontSize ($fontType, $fontSize, $fontWeight) {
+    font-family: $fontType;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $black;
+}
