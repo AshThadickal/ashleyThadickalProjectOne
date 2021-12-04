@@ -1,6 +1,8 @@
 @import "_setup";
 @import "_functions";
 @import "_nav";
+@import "_footer";
+@import "_blog";
 
 
 // * {
@@ -234,50 +236,23 @@ nav li:first-of-type a {
         }
 }
 
-
-
-// .teamImages {
-//     border: 2px solid red;
-//         ul {
-//             display: flex;
-//         }
-
-//         li {
-//             width: calc(25% - 20px);
-//             border: 2px solid purple;
-//             flex-wrap: wrap;
-//         }
-//         img {
-//             border: 2px solid blue; 
-//             flex-wrap: wrap;
-//             // width: calc(25% - 20px);
-//             // display: block;  
-//         }
-// }
-
-// .lastP {
-//             width: calc(25% - 20px);
-//             border: 2px solid green;
-
-// }
-
-.teamImages {
+.viewPortfolio {
     display: flex;
-    flex-wrap: wrap;
-    border: 2px solid red;
-     
+}
 
+.portfolioContainer {
+    background-color: $lightSage;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    padding: 0 80px;
+}
+
+.viewPortfolioImg {
+    width: 50%;
 }
 
 
-.teamImages li {
-        display: flex;
-         width: calc(25% - 20px);
-         margin: 10px;
-         flex-wrap: wrap;
 
-}
-
-.teamImages img {
-    width: 100%;
-}

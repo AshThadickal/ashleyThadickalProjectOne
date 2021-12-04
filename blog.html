@@ -5,12 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative - Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/sass/styles.css">
 </head>
 <body>
     <!-- Beginning of Header -->
     <header class="blogHeader">
         <!-- Beginning of Nav -->
-        <div class="wrapper">
+        <div class="wrapper indexNav">
             <nav>
                 <ul>
                     <li>
@@ -44,18 +53,89 @@
     <!-- Beginning of Main -->
     <main>
 
-        <section class="wrapper blogContainer">
+        <section>
+        <article class="wrapper blogContainer">
             <h2>how to run a creative agency</h2>
             <p>home / blog / <em>How to Run a Creative Agency</em></p>
             <div class="blogAuthor">
-                <img src="./assets/home-9.jpeg" alt="Author of the Blog, Alex">
+                <img src="./assets/blog-2.jpeg" alt="Author of the Blog, Alex">
                 <p>alex<span>Administrator</span></p>
                 <p>date<span>July 31, 2018</span></p>
                 <p>category<span>Entertainment, Business</span></p>
                 <p>tags<span>Design, Web, Lifestyle, Site</span></p>
             </div>
+            <div class="blogPost">
+                <p><em>Analytics bandwidth bootstrapping seed round virality infographic ownership long tail gen-z stealth growth hacking ecosystem. Niche market MVP focus hackathon startup analytics backing low hangining fruit A/B testing agile development paradigm shift.</em></p>
+
+                <p>Strategy development learning curve. Gamification bootstrapping iPhone release direct mailing. Backing iPhone product management. Non-disclosure agreement business plan bandwidth business-to-consumer gounders niche market scrum project disruptive.</p>
+
+                <p>Infrastructure customer pivot seed money incubator funding equity twitter early adopters. Strategy client technology release supply chain customer funding return on investment. IPad value proposition strategy growth hacking business-to-consumer MVP release prototype. Mass market facebook venture angel investor hackathon. Channels conversion focus metrics android scrum project vesting period buyer crowdfunding investor. User experience success iPad interation design marketing iPhone funding analytics stealth freemium. Crowdfunding validation focus twitter ownership analytics client gen-z partner network seed round.</p>
+
+                <p>Crowdfunding conversion accelerator scrum project angel investor. Technology leverage handshake branding seed money lean startup business-to-business channles. Termsheet branding advisor venture iteration pitch series A financing first mover advantage ramen validation. Return on investment deployment analytics MVP. Scrum project learning curve equity social proof. Marketing conversion crowdsource business model canvas interaction design infrastructure android chrun rate agile development user experience ecosystem. Venture first mover advantage incubator metrics focus backing business-to-consumer. Innovator advisor incubator MVP.</p>
+            </div>
+
+            <div class="socialMedia">
+                <h4>share</h4>
+                <ul>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                </ul>
+            </div>
         </section>
 
+        <section class="wrapper postsContainer">
+            <h3>related posts</h3>
+            <div class="relatedPost">
+                <img src="./assets/blog-3.jpeg" alt="A desk with a MacBook, pair of glasses, 3 green plants in white planters, and a desk lamp">
+                <p>July 25, 2018</p>
+            </div>
+            <div class="relatedPost">
+                <img src="./assets/blog-4.jpeg" alt="a green plant in a dark grey planter with three dark grey and one white candle, a small cactus in a white planter and a wooden letter A all on the top corner of a bookshelf">
+                <p>July 26, 2018</p>
+            </div>
+            <div class="relatedPost">
+                <img src="./assets/blog-5.jpeg" alt="A clear mug with a dark drink on a cork coaster, a small green plant in a golden coaster, an upsidedown iPhone and a partial view of a laptop keyboard">
+                <p>July 26, 2018</p>
+            </div>
+        </section>
+
+        <section class="wrapper">
+            <h3>02 comments</h3>
+            <div class="commentContainer">
+                <img class="commentImg" src="./assets/blog-6.jpeg" alt="">
+                <div class="comment">
+                    <p>daniel vandaft<span> - Reply</span></p>
+                    <p>Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding</p>
+                    <p>Jul 17,2015 at 15 hours ago</p>
+                </div>
+                <img src="./assets/blog-7.jpeg" alt="">
+                <p>jennifer loopz<span> - Reply</span></p>
+                <p>Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy.</p>
+                <p>Jul 17,2015 at 15 hours ago</p>
+            </div>
+        </section>
+
+        <section class="wrapper leaveComment">
+            <h2>leave a comment</h2>
+            <form action="#">
+                <label for="clientName" class="sr-only">Enter your name.</label>
+                <input type="text" name="clientName" id="clientName" placeholder="Enter your name...">
+
+                <label for="clientEmail" class="sr-only">Enter your email</label>
+                <input type="email" name="clientEmail" id="clientEmail" placeholder="youremail@domain.com">
+
+                <label for="clientSubject" class="sr-only">Subject (Optional)</label>
+                <input type="text" name="clientSubject" id="clientSubject" placeholder="Subject (Optional)">
+
+                <label for="clientComment" class="sr-only">Here goes your comment</label>
+                <input type="text" name="clientComment" id="clientComment" placeholder="Here goes your comment">
+
+                <button type="submit">submit comment</button>
+            </form>
+        </section>
+
+        
     </main>
         
 

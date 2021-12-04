@@ -230,6 +230,14 @@ html {
   overflow: hidden;
 }
 
+.blogHeader {
+  background-image: url(../../assets/blog-1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 125%;
@@ -442,19 +450,20 @@ nav li:first-of-type a {
   display: block;
 }
 
-.teamImages {
+.viewPortfolio {
   display: flex;
-  flex-wrap: wrap;
-  border: 2px solid red;
 }
 
-.teamImages li {
+.portfolioContainer {
+  background-color: #c3dab7;
   display: flex;
-  width: calc(25% - 20px);
-  margin: 10px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  text-align: center;
+  padding: 0 80px;
 }
 
-.teamImages img {
-  width: 100%;
+.viewPortfolioImg {
+  width: 50%;
 }/*# sourceMappingURL=styles.css.map */
