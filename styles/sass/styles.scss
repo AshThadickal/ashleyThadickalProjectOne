@@ -155,3 +155,129 @@ nav li:first-of-type a {
         }
 
 }
+
+// Features Section
+
+.features {
+    background-image: url(../../assets/home-4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// Team Section
+
+.ourTeam.wrapper {
+    margin: 100px auto;
+        h2 {
+            text-align: center;
+        }
+}
+
+.teamContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.teamPlayers {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    grid-column: 1 / span 2;
+    grid-row: row;
+    background-color: $whiteTwo;
+    padding-left: 20px;
+        h4 {
+            text-transform: uppercase;
+        }
+}
+
+
+.imgA {
+    grid-column: 3 / span 1;
+    grid-row: row;
+}
+
+.imgB {
+ grid-column: 4 / span 1;
+ grid-row: row;
+}
+
+.imgC {
+    grid-column: 1 / span 1;
+    grid-row: row 2;
+}
+
+.imgD {
+    grid-column: 2 / span 1;
+    grid-row: row 2;
+}
+
+.imgE {
+    grid-column: 3 / span 1;
+    grid-row: row 2;
+}
+
+.workWithUs {
+    text-align: center;
+    align-items: center;
+    grid-column: 4 / span 1;
+    grid-row: row 2;
+        p {
+            text-transform: uppercase;
+            padding-top: 25%;
+        }
+        span {
+            display: block;
+        }
+}
+
+
+
+// .teamImages {
+//     border: 2px solid red;
+//         ul {
+//             display: flex;
+//         }
+
+//         li {
+//             width: calc(25% - 20px);
+//             border: 2px solid purple;
+//             flex-wrap: wrap;
+//         }
+//         img {
+//             border: 2px solid blue; 
+//             flex-wrap: wrap;
+//             // width: calc(25% - 20px);
+//             // display: block;  
+//         }
+// }
+
+// .lastP {
+//             width: calc(25% - 20px);
+//             border: 2px solid green;
+
+// }
+
+.teamImages {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid red;
+     
+
+}
+
+
+.teamImages li {
+        display: flex;
+         width: calc(25% - 20px);
+         margin: 10px;
+         flex-wrap: wrap;
+
+}
+
+.teamImages img {
+    width: 100%;
+}
