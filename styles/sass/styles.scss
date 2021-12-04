@@ -110,14 +110,48 @@ nav li:first-of-type a {
     display: inline-block;
     text-align: center;
     margin: 10px;
+    padding-bottom: 50px;
 }
 
+.brandingImage {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 100px;
+    position: relative;
+        img {
+            width: 100%;
+        }
+
+        &::after {
+            content: "";
+            background-image: url(../../assets/home-circle-text.png);
+            background-size: 150px 150px;
+            height: 150px;
+            width: 150px;
+            z-index: 1;
+            position: absolute;
+            top: 50px;
+            left: -50px;
+        }
+    }
+        
+
+
+    
 // Third Section Styling
 
 .thirdSection {
     text-align: center;
+        div {
+            display: flex;
+            justify-content: space-between;
+            margin: 10% auto 5% auto;
+        }
         img {
             border-radius: 50%;
+        }
+        span {
+            margin-top: 10%;
         }
 
 }
