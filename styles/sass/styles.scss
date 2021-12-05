@@ -3,6 +3,7 @@
 @import "_nav";
 @import "_footer";
 @import "_blog";
+@import "_contact";
 
 
 // Typography
@@ -63,30 +64,37 @@ ul {
 a {
     text-decoration: none;
     color: $black;
+    transition: background 0.3s;
+        &:hover,
+        &:focus {
+            background-color: $lightSage;
+        }
+        
 }
 
+input,
+textarea {
+    border: none;
+}
 // Header Styling
 
-header {
-    position: relative;
-}
-
-header::after {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 100px;
-    background-color: grey;
-    position: absolute;
-    left: 50%;
-    top: 90%;
-}
 .indexHeader {
     background-image: url(../../assets/home-1.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-}
+    position: relative;
+        &::after {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 100px;
+            background-color: grey;
+            position: absolute;
+            left: 50%;
+            top: 90%;
+        }
+    }
 
 .indexNav nav {
     display: flex;
@@ -100,12 +108,6 @@ header::after {
                         margin-left: 20px; 
                     } 
                 }
-                        a {
-                            transition: background 0.3s;
-                        }
-                        a:hover {
-                            background-color: $lightSage;
-                        }
             }
         
         h2 {

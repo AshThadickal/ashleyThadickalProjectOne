@@ -55,11 +55,13 @@
 
         <section>
         <article class="wrapper blogContainer">
-            <h2>how to run a creative agency</h2>
-            <p>home / blog / <em>How to Run a Creative Agency</em></p>
-            <div class="blogAuthor">
-                <img src="./assets/blog-2.jpeg" alt="Author of the Blog, Alex">
-                <p>alex<span>Administrator</span></p>
+            <h1>how to run a creative agency</h1>
+            <p><a href="index.html">home</a> / <a href="blog.html">blog</a> / <em>How to Run a Creative Agency</em></p>
+            <div class="blogAuthorContainer">
+                <div class="blogAuthor">
+                    <img src="./assets/blog-2.jpeg" alt="Author of the Blog, Alex">
+                    <p>alex<span>Administrator</span></p>
+                </div>
                 <p>date<span>July 31, 2018</span></p>
                 <p>category<span>Entertainment, Business</span></p>
                 <p>tags<span>Design, Web, Lifestyle, Site</span></p>
@@ -74,18 +76,21 @@
                 <p>Crowdfunding conversion accelerator scrum project angel investor. Technology leverage handshake branding seed money lean startup business-to-business channles. Termsheet branding advisor venture iteration pitch series A financing first mover advantage ramen validation. Return on investment deployment analytics MVP. Scrum project learning curve equity social proof. Marketing conversion crowdsource business model canvas interaction design infrastructure android chrun rate agile development user experience ecosystem. Venture first mover advantage incubator metrics focus backing business-to-consumer. Innovator advisor incubator MVP.</p>
             </div>
 
-            <div class="socialMedia">
-                <h4>share</h4>
-                <ul>
+            <div class="socialContainer">
+                <h4>share:</h4>
+
+                <ul class="socialMedia">
                     <li><i class="fab fa-facebook-f"></i></li>
                     <li><i class="fab fa-twitter"></i></li>
                     <li><i class="fab fa-instagram"></i></li>
                 </ul>
             </div>
+        </article>
         </section>
 
-        <section class="wrapper postsContainer">
+        <section class="wrapper posts">
             <h3>related posts</h3>
+            <div class="postsContainer">
             <div class="relatedPost">
                 <img src="./assets/blog-3.jpeg" alt="A desk with a MacBook, pair of glasses, 3 green plants in white planters, and a desk lamp">
                 <p>July 25, 2018</p>
@@ -98,6 +103,7 @@
                 <img src="./assets/blog-5.jpeg" alt="A clear mug with a dark drink on a cork coaster, a small green plant in a golden coaster, an upsidedown iPhone and a partial view of a laptop keyboard">
                 <p>July 26, 2018</p>
             </div>
+            </div>
         </section>
 
         <section class="wrapper">
@@ -105,14 +111,20 @@
             <div class="commentContainer">
                 <img class="commentImg" src="./assets/blog-6.jpeg" alt="">
                 <div class="comment">
+                    <i class="fas fa-caret-left"></i>
                     <p>daniel vandaft<span> - Reply</span></p>
                     <p>Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding</p>
                     <p>Jul 17,2015 at 15 hours ago</p>
                 </div>
+            </div>
+            <div class="commentContainer">
                 <img src="./assets/blog-7.jpeg" alt="">
-                <p>jennifer loopz<span> - Reply</span></p>
-                <p>Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy.</p>
-                <p>Jul 17,2015 at 15 hours ago</p>
+                <div class="comment">
+                    <i class="fas fa-caret-left"></i>
+                    <p>jennifer loopz<span> - Reply</span></p>
+                    <p>Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy.</p>
+                    <p>Jul 17,2015 at 15 hours ago</p>
+                </div>
             </div>
         </section>
 
@@ -129,8 +141,8 @@
                 <input type="text" name="clientSubject" id="clientSubject" placeholder="Subject (Optional)">
 
                 <label for="clientComment" class="sr-only">Here goes your comment</label>
-                <input type="text" name="clientComment" id="clientComment" placeholder="Here goes your comment">
-
+                <textarea name="clientComment" id="clientComment" cols="30" rows="10" placeholder="Here goes your comment"></textarea>
+                
                 <button type="submit">submit comment</button>
             </form>
         </section>    
@@ -138,45 +150,55 @@
 
     <footer>
         <section class="wrapper footerContainer">
-        <div class="contactUs">
-            <h4>contact us</h4>
-            <p>6591 Orchard Street, NY 1002, United States</p>
-            <p>Email: contact@onepro.co</p>
-            <p>Phone 01: +00 (9) 123 3456 789</p>
-            <p>Phone 02: +00 (9) 123 3456 788</p>
-            <p>Fax: +00 (9) 643 6543 898</p>
-            <ul>
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-            </ul>
-        </div>
+            <div class="contactUs">
+                <h2>contact us</h2>
+                <p>6591 Orchard Street, NY 1002, United States</p>
+                <p>Email: contact@onepro.co</p>
+                <p>Phone 01: +00 (9) 123 3456 789</p>
+                <p>Phone 02: +00 (9) 123 3456 788</p>
+                <p>Fax: +00 (9) 643 6543 898</p>
+                <ul>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                </ul>
+            </div>
     
-        <div class="recentPosts">
-            <h4>recent posts</h4>
-            <ul>
-                <li>Conversion hackathon partner</li>
-                <li>Network channels entrepreneur</li>
-                <li>Return on investment creative</li>
-                <li>Assets interaction design venture</li>
-                <li>Infographic learning curve</li>
-            </ul>
-        </div>
+            <div class="recentPosts">
+                <h2>recent posts</h2>
+                <ul>
+                    <li>
+                        <a href="#conversion">Conversion hackathon partner</a>
+                    </li>
+                    <li>
+                        <a href="#network">Network channels entrepreneur</a>
+                    </li>
+                    <li>
+                        <a href="#return">Return on investment creative</a>
+                    </li>
+                    <li>
+                        <a href="#assets">Assets interaction design venture</a>
+                    </li>
+                    <li>
+                        <a href="#infographic">Infographic learning curve</a>
+                    </li>
+                </ul>
+            </div>
     
-        <div class="twitterWidget">
-            <h4>subscribe now</h4>
-            <p>Signup for emails and notifications below</p>
-            <form action="">
+            <div class="twitterWidget">
+                <h2>subscribe now</h2>
+                <p>Signup for emails and notifications below</p>
+                <form action="">
     
-                <label for="email" class="sr-only"></label>
-                <input type="email" name="email" placeholder="Enter your email"><span><button type="submit"><i
-                            class="fas fa-long-arrow-alt-right"></i></button></span>
-            </form>
-        </div>
+                    <label for="email" class="sr-only"></label>
+                    <input type="email" name="email" placeholder="Enter your email"><span><button type="submit"><i
+                                class="fas fa-long-arrow-alt-right"></i></button></span>
+                </form>
+            </div>
         </section>
-
-        <h4 class="wrapper">creative agency</h4>
-
+    
+        <h2 class="wrapper">creative agency</h2>
+    
     </footer>
         
 

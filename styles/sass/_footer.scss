@@ -18,10 +18,15 @@ footer {
         .recentPosts {
             ul {
                 list-style: disc;
+                transition: color 0.3s;
             }
                 a {
                     color: $white;
                     text-transform: none;
+                        &:hover,
+                        &:focus {
+                            color: $black;
+                        }
                 }
         }
 }
