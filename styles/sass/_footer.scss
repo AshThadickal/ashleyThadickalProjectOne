@@ -1,0 +1,71 @@
+footer {
+    background-color: $black;
+    color: $white;
+    position: relative;
+    &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 75%;
+                height: 1px;
+                width: 100%;
+                background-color: $whiteTwo;
+            }
+        > h2 {
+            padding: 100px 0 50px 0;
+            text-align: center;
+        }
+        .recentPosts {
+            ul {
+                list-style: disc;
+            }
+                a {
+                    color: $white;
+                    text-transform: none;
+                }
+        }
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;      
+}
+
+.contactUs,
+.recentPosts,
+.twitterWidget {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactUs {
+    p {
+        margin: 0;
+    }
+    ul {
+        display: flex;
+        margin-top: 20px;
+        li {
+            padding-right: 20px;
+        }
+    }
+}
+
+
+.twitterWidget {
+    input[type="email"] {
+        padding: 10px 20px; 
+        border: none; 
+    }
+
+    ::placeholder {
+        color: grey;
+    }
+
+    button {
+        background-color: $lightSage;
+        border: none;
+        padding: 10px 10px 8px;
+    }
+}
