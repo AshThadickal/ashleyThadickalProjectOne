@@ -9,6 +9,36 @@
     align-items: flex-end;
 }
 
-h2 span {
-    display: block;
+main {
+    position: relative;
+        h2 {
+            position: absolute;
+            top: -5%;
+            left: 20%;
+                span {
+                    display: block;
+            }
+        }
+        
+}
+
+
+.contactDetails {
+    padding-top: 100px;
+        p {
+            width: 50%;
+    }
+}
+
+.contactIcons {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 0;
+        i {
+            font-size: 1.5rem;
+        }
+        p {
+            width: 100%;
+            margin: 5px 0;
+        }
 }

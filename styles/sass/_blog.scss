@@ -7,6 +7,7 @@
 }
 
 .blogContainer {
+    padding-top: 80px;
     > p {
         text-transform: uppercase;
             em {
@@ -24,14 +25,18 @@
         .blogAuthor {
             display: flex;
         }
+            img {
+                border-radius: 50%;
+            }
             p {
+                margin-left: 20px;
                 text-transform: uppercase;
                 font-weight: bold;
             }
-        span {
-            display: block;
-            text-transform: none;
-            font-weight: normal;
+            span {
+                display: block;
+                text-transform: none;
+                font-weight: normal;
         }
 }
 
@@ -44,6 +49,9 @@
 }
 
 .socialContainer {
+    h4 {
+        text-transform: uppercase;
+    }
     display: flex;
         .socialMedia {
             width: 15%;
@@ -118,39 +126,4 @@
         border-bottom: 1px solid grey;
     }
 
-    form {
-        padding-bottom: 100px;
-        input {
-            border-bottom: 1px solid grey;
-            width: calc(33% - 10px);
-            padding-top: 30px;
-
-        }
-
-        input:nth-of-type(1),
-        input:nth-of-type(2) {
-            margin-right: 15px;
-        }
-
-        textarea {
-            resize: none;
-            width: 100%;
-            border-bottom: 1px solid grey;
-            margin-top: 20px;
-        }
-
-        button {
-            text-transform: uppercase;
-            background-color: $white;
-            border: none;
-            border-bottom: 1px solid grey;
-            padding-top: 20px;
-            transition: background 0.3s;
-                &:hover,
-                &:focus {
-                    background-color: $lightSage;
-                }
-        }
-
-}
 }
