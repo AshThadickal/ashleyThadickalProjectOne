@@ -1,10 +1,12 @@
 @import "_setup";
 @import "_functions";
+@import "_index";
 @import "_nav";
 @import "_footer";
 @import "_blog";
 @import "_form";
 @import "_contact";
+@import "_media";
 
 
 // Typography
@@ -26,11 +28,15 @@ h2 {
     letter-spacing: 0.9px;
 }
 
-h1,
-h3 {
-    font-size: 0.9rem;
+// Please see comment above body re: font size. As I chose a larger font size for the body (accessibility) I chose a larger size for the header fonts to keep a size difference between the two.
+h1, h3 {
+    font-size: 1.5rem;
     line-height: 24px;
     letter-spacing: 1.8px;
+}
+
+h3 {
+    font-size: 1rem;
 }
 
 button, 
@@ -39,9 +45,11 @@ nav {
    line-height: 24px;
    letter-spacing: 0.7px; 
 }
-
+// The style sheet suggested a font size of 14px; however, with accessibility in mind, I chose a higher font size 
 body {
     @include fontSize ($bodyFont, 0.9rem, 400);
+    line-height: 24px;
+    letter-spacing: 0.7px;
 }
 
 // General Styles
@@ -78,250 +86,3 @@ input,
 textarea {
     border: none;
 }
-// Header Styling
-
-.indexHeader {
-    background-image: url(../../assets/home-1.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    position: relative;
-        &::after {
-            content: "";
-            display: block;
-            width: 1px;
-            height: 100px;
-            background-color: grey;
-            position: absolute;
-            left: 50%;
-            top: 90%;
-        }
-    }
-
-
-
-// Branding Section Styling
-
-.indexBranding {
-    background-color: $lightSage;
-    padding-top: 200px;
-    position: relative;
-    &::before {
-        content: "";
-        display: block;
-        width: 1px;
-        height: 100px;
-        background-color: grey;
-        position: absolute;
-        left: 50%;
-        top: 0;
-    }
-}
-
-.brandingContainer {
-    width: calc(50% - 30px);
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-    padding-bottom: 100px;
-}
-
-.brandingImage {
-    width: 75%;
-    margin: 0 auto;
-    position: relative;
-        img {
-            width: 100%;
-        }
-
-        &::after {
-            content: "";
-            background-image: url(../../assets/home-circle-text.png);
-            background-size: 150px 150px;
-            height: 150px;
-            width: 150px;
-            z-index: 1;
-            position: absolute;
-            top: -50px;
-            left: -50px;
-        }
-    }
-        
-
-
-    
-// Third Section Styling
-
-.thirdSection {
-    text-align: center;
-        div {
-            display: flex;
-            justify-content: space-between;
-            margin: 10% auto 5% auto;
-        }
-        img {
-            border-radius: 50%;
-        }
-        span {
-            transform: background 0.3s;
-                i { 
-                    height: 25px;
-                    width: 25px;
-                        &:hover,
-                        &:focus {
-                            background-color: $lightSage;
-                }
-        }
-        }
-        
-        p {
-            padding-bottom: 100px;
-        }
-
-}
-
-// Features Section
-
-.features {
-    background-image: url(../../assets/home-4.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-        &::before {
-        content: "";
-        display: block;
-        width: 1px;
-        height: 100px;
-        background-color: grey;
-        position: absolute;
-        left: 50%;
-        top: 100%;
-    }
-}
-.featuresContainer {
-    max-width: 1200px;
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 50%;
-    padding: 100px 0;
-        
-}
-
-.box {
-    width: calc(50% - 40px);
-    margin-right: 40px;
-    position: relative;
-        i {
-            position: absolute;
-            top: 0;
-            left: -60px;
-            width: 55px;
-            border: 1px solid black;
-            border-radius: 50%;
-            padding: 15px;
-            font-size: 1.5rem;
-        }
-}
-
-
-// Team Section
-
-.ourTeam.wrapper {
-    margin: 0px auto;
-    padding: 150px 0;
-        h2 {
-            text-align: center;
-        }
-}
-
-.teamContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50% 50%;
-    gap: 10px;
-    margin-bottom: 50px;
-}
-
-.teamPlayers {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    grid-column: 1 / span 2;
-    grid-row: row;
-    background-color: $whiteTwo;
-    padding-left: 20px;
-        h4 {
-            text-transform: uppercase;
-        }
-}
-
-
-.imgA {
-    grid-column: 3 / span 1;
-    grid-row: row;
-}
-
-.imgB {
- grid-column: 4 / span 1;
- grid-row: row;
-}
-
-.imgC {
-    grid-column: 1 / span 1;
-    grid-row: row 2;
-}
-
-.imgD {
-    grid-column: 2 / span 1;
-    grid-row: row 2;
-}
-
-.imgE {
-    grid-column: 3 / span 1;
-    grid-row: row 2;
-}
-
-.workWithUs {
-    text-align: center;
-    align-items: center;
-    grid-column: 4 / span 1;
-    grid-row: row 2;
-        p {
-            text-transform: uppercase;
-            padding-top: 25%;
-        }
-        span {
-            display: block;
-        }
-}
-
-.viewPortfolio {
-    display: flex;
-
-    button {
-            background-color: $whiteTwo;
-            margin: 0 auto;
-            padding: 15px;
-            text-transform: uppercase;
-            font-weight: bold;
-            border: none;
-        }
-}
-
-.portfolioContainer {
-    background-color: $lightSage;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    text-align: center;
-    padding: 0 80px;
-}
-
-.viewPortfolioImg {
-    width: 50%;
-}
-
-
-

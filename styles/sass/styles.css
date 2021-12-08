@@ -230,6 +230,243 @@ html {
   overflow: hidden;
 }
 
+.indexHeader {
+  background-image: url(../../assets/home-1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+.indexHeader::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100px;
+  background-color: grey;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+}
+
+.indexBranding {
+  background-color: #c3dab7;
+  padding-top: 200px;
+  position: relative;
+}
+.indexBranding::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100px;
+  background-color: grey;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+
+.brandingContainer {
+  width: calc(50% - 30px);
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  padding-bottom: 100px;
+}
+
+.brandingImage {
+  width: 75%;
+  margin: 0 auto;
+  position: relative;
+}
+.brandingImage img {
+  width: 100%;
+}
+.brandingImage::after {
+  content: "";
+  background-image: url(../../assets/home-circle-text.png);
+  background-size: 150px 150px;
+  height: 150px;
+  width: 150px;
+  z-index: 1;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+}
+
+.imageSummary {
+  text-align: center;
+}
+.imageSummary div {
+  display: flex;
+  justify-content: space-between;
+  margin: 10% auto 5% auto;
+}
+.imageSummary div i {
+  margin-top: 20%;
+}
+.imageSummary img {
+  border-radius: 50%;
+}
+.imageSummary div {
+  transform: background 0.3s;
+}
+.imageSummary div i {
+  height: 25px;
+  width: 25px;
+}
+.imageSummary div i:hover, .imageSummary div i:focus {
+  background-color: #c3dab7;
+}
+.imageSummary p {
+  padding-bottom: 100px;
+}
+
+.features {
+  background-image: url(../../assets/home-4.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.features::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100px;
+  background-color: grey;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+}
+
+.featuresContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50%;
+  padding: 50px 0;
+}
+.featuresContainer h2 {
+  display: none;
+}
+
+.box {
+  width: 50%;
+  margin-bottom: 50px;
+  padding-right: 100px;
+  position: relative;
+  flex: 1 0 auto;
+}
+.box i {
+  position: absolute;
+  top: 0;
+  left: -60px;
+  width: 55px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 1.5rem;
+}
+
+.boxE,
+.boxF {
+  margin-bottom: 0;
+}
+
+.ourTeam.wrapper {
+  margin: 0px auto;
+  padding: 150px 0;
+}
+.ourTeam.wrapper h2 {
+  text-align: center;
+}
+
+.teamContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.teamPlayers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-column: 1/span 2;
+  grid-row: row;
+  background-color: #f6f6f6;
+  padding-left: 20px;
+}
+.teamPlayers h4 {
+  text-transform: uppercase;
+}
+
+.imgA {
+  grid-column: 3/span 1;
+  grid-row: row;
+}
+
+.imgB {
+  grid-column: 4/span 1;
+  grid-row: row;
+}
+
+.imgC {
+  grid-column: 1/span 1;
+  grid-row: row 2;
+}
+
+.imgD {
+  grid-column: 2/span 1;
+  grid-row: row 2;
+}
+
+.imgE {
+  grid-column: 3/span 1;
+  grid-row: row 2;
+}
+
+.workWithUs {
+  text-align: center;
+  align-items: center;
+  grid-column: 4/span 1;
+  grid-row: row 2;
+}
+.workWithUs p {
+  text-transform: uppercase;
+  padding-top: 25%;
+}
+.workWithUs span {
+  display: block;
+}
+
+.viewPortfolio {
+  display: flex;
+}
+.viewPortfolio .portfolioContainer {
+  background-color: #c3dab7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  text-align: center;
+  padding: 0 80px;
+  transform: color 0.3s;
+}
+.viewPortfolio button {
+  background-color: #f6f6f6;
+  margin: 0 auto;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+}
+.viewPortfolio button:hover, .viewPortfolio button:focus {
+  color: #c3dab7;
+}
+
+.viewPortfolioImg {
+  width: 50%;
+}
+
 header nav {
   display: flex;
   justify-content: space-around;
@@ -252,6 +489,10 @@ header nav h2 {
   text-decoration: line-through;
 }
 
+.fa-bars {
+  display: none;
+}
+
 footer {
   background-color: #333;
   color: #fff;
@@ -266,7 +507,7 @@ footer::before {
   width: 100%;
   background-color: #f6f6f6;
 }
-footer > h2 {
+footer > h3 {
   padding: 100px 0 50px 0;
   text-align: center;
 }
@@ -293,6 +534,7 @@ footer .recentPosts a:hover, footer .recentPosts a:focus {
 .twitterWidget {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
 }
 
 .contactUs p {
@@ -365,6 +607,9 @@ footer .recentPosts a:hover, footer .recentPosts a:focus {
   display: block;
   text-transform: none;
   font-weight: normal;
+}
+.blogAuthorContainer .blogDetails {
+  display: flex;
 }
 
 .blogPost {
@@ -487,15 +732,15 @@ footer .recentPosts a:hover, footer .recentPosts a:focus {
   align-items: flex-end;
 }
 
-main {
+.contactMain {
   position: relative;
 }
-main h2 {
+.contactMain h2 {
   position: absolute;
   top: -5%;
   left: 20%;
 }
-main h2 span {
+.contactMain h2 span {
   display: block;
 }
 
@@ -519,6 +764,281 @@ main h2 span {
   margin: 5px 0;
 }
 
+@media (max-width: 1350px) {
+  main .features {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../../assets/home-4.jpeg);
+  }
+}
+@media (max-width: 1100px) {
+  div.featuresContainer {
+    margin-left: 20%;
+  }
+}
+@media (max-width: 940px) {
+  .indexHeader ul,
+.indexNav ul,
+.blogNav ul {
+    display: block;
+  }
+
+  .icon {
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .teamContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .teamContainer .teamPlayers {
+    grid-column: 1/span 3;
+    grid-row: row;
+  }
+  .teamContainer .imgA {
+    grid-column: 1/span 1;
+    grid-row: row 2;
+  }
+  .teamContainer .imgB {
+    grid-column: 2/span 1;
+    grid-row: row 2;
+  }
+  .teamContainer .imgC {
+    grid-column: 3/span 1;
+    grid-row: row 2;
+  }
+  .teamContainer .imgD {
+    grid-column: 1/span 1;
+    grid-row: row 3;
+  }
+  .teamContainer .imgE {
+    grid-column: 2/span 1;
+    grid-row: row 3;
+  }
+  .teamContainer .workWithUs {
+    grid-column: 3/span 1;
+    grid-row: row 3;
+  }
+
+  .blogHeader {
+    background-size: contain;
+    height: 50vh;
+  }
+
+  .blogContainer {
+    padding: 0;
+  }
+
+  .blogAuthorContainer {
+    display: block;
+  }
+  .blogAuthorContainer .blogDetails {
+    justify-content: space-between;
+  }
+
+  .commentContainer {
+    display: block;
+  }
+
+  .contactForm input {
+    width: 75%;
+    padding-top: 30px;
+  }
+  .contactForm textarea {
+    margin-top: 30px;
+  }
+
+  footer::before {
+    top: 90%;
+  }
+
+  .footerContainer {
+    display: block;
+    text-align: center;
+  }
+  .footerContainer .contactUs ul {
+    justify-content: center;
+  }
+  .footerContainer .recentPosts,
+.footerContainer .twitterWidget {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  main .brandingContainer {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
+  main .featuresContainer {
+    display: block;
+    padding: 20px 0;
+  }
+  main .featuresContainer .box {
+    width: 100%;
+  }
+  main .featuresContainer .boxF {
+    margin-bottom: 0;
+  }
+
+  .viewPortfolio {
+    display: block;
+  }
+  .viewPortfolio .portfolioContainer,
+.viewPortfolio .viewPortfolioImg {
+    width: 100%;
+  }
+  .viewPortfolio .portfolioContainer {
+    padding-bottom: 50px;
+  }
+  .viewPortfolio .viewPortfolioImg {
+    height: 200px;
+  }
+
+  .contactMain h2 {
+    position: static;
+  }
+
+  .contactDetails,
+.contactIcons {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 480px) {
+  header.indexHeader {
+    height: 80vh;
+    background-size: cover;
+  }
+
+  .indexHeader ul,
+.indexNav ul,
+.blogNav ul {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+  }
+
+  .indexBranding {
+    padding-top: 100px;
+  }
+
+  .brandingContainer h2 {
+    font-size: 1.1rem;
+  }
+
+  .brandingImage::after {
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .imageSummary img {
+    width: 50%;
+  }
+
+  main .features {
+    display: block;
+  }
+  main .features .featuresContainer {
+    display: block;
+    padding-left: 30px;
+  }
+  main .features .featuresContainer div:nth-of-type(odd) {
+    display: none;
+  }
+
+  .ourTeam {
+    padding: 100px 0 50px 0;
+  }
+
+  .teamPlayers p {
+    display: none;
+  }
+
+  .contactDetails p {
+    width: 100%;
+  }
+  .contactDetails .contactIcons {
+    display: block;
+    padding-bottom: 0;
+  }
+  .contactDetails .contactIcons div {
+    margin-bottom: 50px;
+  }
+
+  .blogHeader {
+    height: 25vh;
+  }
+
+  .blogContainer h2 {
+    font-size: 1.1rem;
+  }
+
+  .postsContainer div:nth-of-type(3) {
+    display: none;
+  }
+
+  .posts .relatedPost {
+    width: calc(50% - 20px);
+  }
+}
+@media (max-width: 350px) {
+  header.indexHeader {
+    height: 35vh;
+  }
+
+  .indexBranding::before {
+    height: 50px;
+  }
+
+  .ourTeam {
+    padding: 100px 0 50px 0;
+  }
+
+  .teamContainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .teamContainer .teamPlayers {
+    grid-column: 1/span 2;
+    grid-row: row;
+  }
+  .teamContainer .imgA {
+    grid-column: 1/span 1;
+    grid-row: row 2;
+  }
+  .teamContainer .imgB {
+    grid-column: 2/span 1;
+    grid-row: row 2;
+  }
+  .teamContainer .imgC {
+    grid-column: 1/span 1;
+    grid-row: row 3;
+  }
+  .teamContainer .imgD {
+    grid-column: 2/span 1;
+    grid-row: row 3;
+  }
+  .teamContainer .imgE {
+    grid-column: 1/span 1;
+    grid-row: row 4;
+  }
+  .teamContainer .workWithUs {
+    grid-column: 2/span 1;
+    grid-row: row 4;
+  }
+
+  .blogDetails {
+    flex-direction: column;
+  }
+}
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 125%;
@@ -539,11 +1059,14 @@ h2 {
   letter-spacing: 0.9px;
 }
 
-h1,
-h3 {
-  font-size: 0.9rem;
+h1, h3 {
+  font-size: 1.5rem;
   line-height: 24px;
   letter-spacing: 1.8px;
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 button,
@@ -558,6 +1081,8 @@ body {
   font-size: 0.9rem;
   font-weight: 400;
   color: #333;
+  line-height: 24px;
+  letter-spacing: 0.7px;
 }
 
 img {
@@ -589,227 +1114,4 @@ a:hover, a:focus {
 input,
 textarea {
   border: none;
-}
-
-.indexHeader {
-  background-image: url(../../assets/home-1.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  position: relative;
-}
-.indexHeader::after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 100px;
-  background-color: grey;
-  position: absolute;
-  left: 50%;
-  top: 90%;
-}
-
-.indexBranding {
-  background-color: #c3dab7;
-  padding-top: 200px;
-  position: relative;
-}
-.indexBranding::before {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 100px;
-  background-color: grey;
-  position: absolute;
-  left: 50%;
-  top: 0;
-}
-
-.brandingContainer {
-  width: calc(50% - 30px);
-  display: inline-block;
-  text-align: center;
-  margin: 10px;
-  padding-bottom: 100px;
-}
-
-.brandingImage {
-  width: 75%;
-  margin: 0 auto;
-  position: relative;
-}
-.brandingImage img {
-  width: 100%;
-}
-.brandingImage::after {
-  content: "";
-  background-image: url(../../assets/home-circle-text.png);
-  background-size: 150px 150px;
-  height: 150px;
-  width: 150px;
-  z-index: 1;
-  position: absolute;
-  top: -50px;
-  left: -50px;
-}
-
-.thirdSection {
-  text-align: center;
-}
-.thirdSection div {
-  display: flex;
-  justify-content: space-between;
-  margin: 10% auto 5% auto;
-}
-.thirdSection img {
-  border-radius: 50%;
-}
-.thirdSection span {
-  transform: background 0.3s;
-}
-.thirdSection span i {
-  height: 25px;
-  width: 25px;
-}
-.thirdSection span i:hover, .thirdSection span i:focus {
-  background-color: #c3dab7;
-}
-.thirdSection p {
-  padding-bottom: 100px;
-}
-
-.features {
-  background-image: url(../../assets/home-4.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.features::before {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 100px;
-  background-color: grey;
-  position: absolute;
-  left: 50%;
-  top: 100%;
-}
-
-.featuresContainer {
-  max-width: 1200px;
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 50%;
-  padding: 100px 0;
-}
-
-.box {
-  width: calc(50% - 40px);
-  margin-right: 40px;
-  position: relative;
-}
-.box i {
-  position: absolute;
-  top: 0;
-  left: -60px;
-  width: 55px;
-  border: 1px solid black;
-  border-radius: 50%;
-  padding: 15px;
-  font-size: 1.5rem;
-}
-
-.ourTeam.wrapper {
-  margin: 0px auto;
-  padding: 150px 0;
-}
-.ourTeam.wrapper h2 {
-  text-align: center;
-}
-
-.teamContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50% 50%;
-  gap: 10px;
-  margin-bottom: 50px;
-}
-
-.teamPlayers {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  grid-column: 1/span 2;
-  grid-row: row;
-  background-color: #f6f6f6;
-  padding-left: 20px;
-}
-.teamPlayers h4 {
-  text-transform: uppercase;
-}
-
-.imgA {
-  grid-column: 3/span 1;
-  grid-row: row;
-}
-
-.imgB {
-  grid-column: 4/span 1;
-  grid-row: row;
-}
-
-.imgC {
-  grid-column: 1/span 1;
-  grid-row: row 2;
-}
-
-.imgD {
-  grid-column: 2/span 1;
-  grid-row: row 2;
-}
-
-.imgE {
-  grid-column: 3/span 1;
-  grid-row: row 2;
-}
-
-.workWithUs {
-  text-align: center;
-  align-items: center;
-  grid-column: 4/span 1;
-  grid-row: row 2;
-}
-.workWithUs p {
-  text-transform: uppercase;
-  padding-top: 25%;
-}
-.workWithUs span {
-  display: block;
-}
-
-.viewPortfolio {
-  display: flex;
-}
-.viewPortfolio button {
-  background-color: #f6f6f6;
-  margin: 0 auto;
-  padding: 15px;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: none;
-}
-
-.portfolioContainer {
-  background-color: #c3dab7;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-  text-align: center;
-  padding: 0 80px;
-}
-
-.viewPortfolioImg {
-  width: 50%;
 }/*# sourceMappingURL=styles.css.map */

@@ -11,7 +11,7 @@ footer {
                 width: 100%;
                 background-color: $whiteTwo;
             }
-        > h2 {
+        > h3 {
             padding: 100px 0 50px 0;
             text-align: center;
         }
@@ -42,6 +42,7 @@ footer {
 .twitterWidget {
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
 }
 
 .contactUs {
