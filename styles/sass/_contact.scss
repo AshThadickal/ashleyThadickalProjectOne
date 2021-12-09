@@ -1,3 +1,6 @@
+// contact page styling
+
+// header background image styling
 .contactUsHeading {
     max-width: 1600px;
     width: 100%;
@@ -9,6 +12,7 @@
     align-items: flex-end;
 }
 
+// styling of the heading of Contact Us
 .contactMain {
     position: relative;
         h2 {
@@ -19,26 +23,35 @@
                     display: block;
             }
         }
+
+        // styling of the contact details para.
+        .contactDetails {
+            padding-top: 5%;
+                p {
+                    width: 50%;
+            }
+        }
+
+        // styling of the phone/address/email section
+        .contactIcons {
+            display: flex;
+            justify-content: space-around;
+            padding: 5% 0;
+                i {
+                    font-size: 1.5rem;
+                }
+                p {
+                    width: 100%;
+                    margin: 5px 0;
+                }
+        }
         
 }
 
-
-.contactDetails {
-    padding-top: 100px;
-        p {
-            width: 50%;
-    }
-}
-
-.contactIcons {
-    display: flex;
-    justify-content: space-around;
-    padding: 100px 0;
-        i {
-            font-size: 1.5rem;
-        }
-        p {
-            width: 100%;
-            margin: 5px 0;
-        }
+// styling of the background image above the footer section
+.backgroundImg {
+    background-image: url(../../assets/contact-2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
 }

@@ -1,12 +1,12 @@
 
 @media (max-width: 1350px) {
-    main .features {
+    .features {
         background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../../assets/home-4.jpeg)
     }
 }
 
 @media (max-width: 1100px) {
-    div.featuresContainer {
+    .features .featuresContainer {
         margin-left: 20%
     }
 }
@@ -25,7 +25,7 @@
 }
 
 @media (max-width: 900px) {
-    .teamContainer {
+    .ourTeam .teamContainer {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
             .teamPlayers {
@@ -72,7 +72,7 @@
         padding: 0;
     }
       
-    .blogAuthorContainer {
+    .blogContainer .blogAuthorContainer {
         display: block;
             .blogDetails {
                 justify-content: space-between;
@@ -94,37 +94,30 @@
     }
 
     footer::before {
-        top: 90%;
+        top: 80%;
     }
 
-    .footerContainer {
+    footer .footerContainer {
         display: block;
         text-align: center;
             .contactUs ul {
                 justify-content: center;
             }
-            .recentPosts, 
-            .twitterWidget {
-                margin-top: 30px;
-            }
     }
 }
 
 @media (max-width: 768px) {
-    main .brandingContainer {
+    .brandingCircle .brandingContainer {
         display: block;
         width: 100%;
         margin: 0 auto;
-        padding-bottom: 50px;
+        padding-bottom: 5%;
     }
 
     main .featuresContainer {
         display: block; 
-        padding: 20px 0;
             .box {
                 width: 100%;
-            }
-            .boxF {
                 margin-bottom: 0;
             }
     }
@@ -137,7 +130,7 @@
             }
 
             .portfolioContainer {
-                padding-bottom: 50px;
+                padding: 5%
             }
 
             .viewPortfolioImg {
@@ -147,13 +140,11 @@
 
     .contactMain h2 {
         position: static;
+            
     }
-
-    .contactDetails,
-    .contactIcons {
-        padding: 50px 0;
-    }
-
+    .backgroundImg {
+                    height: 25vh;
+                }
     
 }
 
@@ -175,15 +166,12 @@
         top: 10px;
     }
 
-    .indexBranding {
-        padding-top: 100px;
-    }
     .brandingContainer h2 {
         font-size: 1.1rem;
    
     }
 
-    .brandingImage::after {
+    .brandingCircle .brandingImage::after {
         background-size: 100px 100px;
         height: 100px;
         width: 100px;
@@ -204,11 +192,51 @@
             }
     }
 
-    .ourTeam {
-        padding: 100px 0 50px 0;
-    }
-    .teamPlayers p {
-        display: none;
+    // .ourTeam {
+    //     padding: 100px 0 50px 0;
+    // }
+    .ourTeam.wrapper {
+        .teamContainer {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 50% 50%;
+            gap: 10px;
+                .teamPlayers {
+                    grid-column: 1 / span 2;
+                    grid-row: row;
+                }
+                .imgA {
+                    grid-column: 1 / span 1;
+                    grid-row: row 2;
+                }
+                
+                .imgB {
+                    grid-column: 2 / span 1;
+                    grid-row: row 2;
+                }
+
+                .imgC {
+                    grid-column: 1 / span 1;
+                    grid-row: row 3;
+                }
+
+                .imgD {
+                    grid-column: 2 / span 1;
+                    grid-row: row 3;
+                }
+
+                .imgE {
+                    grid-column: 1 / span 1;
+                    grid-row: row 4;
+                }
+
+                .workWithUs {
+                    grid-column: 2 / span 1;
+                    grid-row: row 4;
+                }               
+            }
+            .teamPlayers p {
+                        display: none;
+                    }
     }
 
     .contactDetails {
@@ -243,6 +271,10 @@
     .posts .relatedPost {
             width: calc(50% - 20px);
         }
+
+    .contactMain .contactDetails p {
+        width: 100%;
+    }
 }
 
 @media (max-width: 350px) {
@@ -256,47 +288,11 @@
         }
     }
 
-    .ourTeam {
-        padding: 100px 0 50px 0;
-    }
+    // .ourTeam {
+    //     padding: 100px 0 50px 0;
+    // }
 
-    .teamContainer {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-            .teamPlayers {
-                grid-column: 1 / span 2;
-                grid-row: row;
-            }
-            .imgA {
-                grid-column: 1 / span 1;
-                grid-row: row 2;
-            }
-            
-            .imgB {
-                grid-column: 2 / span 1;
-                grid-row: row 2;
-            }
-
-            .imgC {
-                grid-column: 1 / span 1;
-                grid-row: row 3;
-            }
-
-            .imgD {
-                grid-column: 2 / span 1;
-                grid-row: row 3;
-            }
-
-            .imgE {
-                grid-column: 1 / span 1;
-                grid-row: row 4;
-            }
-
-            .workWithUs {
-                grid-column: 2 / span 1;
-                grid-row: row 4;
-            }
-    }
+    
 
     .blogDetails {
         flex-direction: column;

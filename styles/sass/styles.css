@@ -250,7 +250,7 @@ html {
 
 .indexBranding {
   background-color: #c3dab7;
-  padding-top: 200px;
+  padding-top: 15%;
   position: relative;
 }
 .indexBranding::before {
@@ -263,24 +263,15 @@ html {
   left: 50%;
   top: 0;
 }
-
-.brandingContainer {
-  width: calc(50% - 30px);
-  display: inline-block;
-  text-align: center;
-  margin: 10px;
-  padding-bottom: 100px;
-}
-
-.brandingImage {
+.indexBranding .brandingImage {
   width: 75%;
   margin: 0 auto;
   position: relative;
 }
-.brandingImage img {
+.indexBranding .brandingImage img {
   width: 100%;
 }
-.brandingImage::after {
+.indexBranding .brandingImage::after {
   content: "";
   background-image: url(../../assets/home-circle-text.png);
   background-size: 150px 150px;
@@ -291,6 +282,13 @@ html {
   top: -50px;
   left: -50px;
 }
+.indexBranding .brandingContainer {
+  width: calc(50% - 30px);
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  padding-bottom: 10%;
+}
 
 .imageSummary {
   text-align: center;
@@ -299,25 +297,21 @@ html {
   display: flex;
   justify-content: space-between;
   margin: 10% auto 5% auto;
-}
-.imageSummary div i {
-  margin-top: 20%;
-}
-.imageSummary img {
-  border-radius: 50%;
-}
-.imageSummary div {
   transform: background 0.3s;
 }
 .imageSummary div i {
+  margin-top: 20%;
   height: 25px;
   width: 25px;
 }
 .imageSummary div i:hover, .imageSummary div i:focus {
   background-color: #c3dab7;
 }
+.imageSummary div img {
+  border-radius: 50%;
+}
 .imageSummary p {
-  padding-bottom: 100px;
+  padding-bottom: 10%;
 }
 
 .features {
@@ -336,25 +330,20 @@ html {
   left: 50%;
   top: 100%;
 }
-
-.featuresContainer {
+.features .featuresContainer {
   display: flex;
   flex-wrap: wrap;
   margin-left: 50%;
-  padding: 50px 0;
+  padding: 5% 0;
 }
-.featuresContainer h2 {
-  display: none;
-}
-
-.box {
+.features .box {
   width: 50%;
-  margin-bottom: 50px;
-  padding-right: 100px;
+  margin-bottom: 10%;
+  padding-right: 10%;
   position: relative;
   flex: 1 0 auto;
 }
-.box i {
+.features .box i {
   position: absolute;
   top: 0;
   left: -60px;
@@ -364,77 +353,63 @@ html {
   padding: 15px;
   font-size: 1.5rem;
 }
-
-.boxE,
-.boxF {
+.features .boxE,
+.features .boxF {
   margin-bottom: 0;
 }
 
 .ourTeam.wrapper {
   margin: 0px auto;
-  padding: 150px 0;
+  padding: 10% 0;
 }
 .ourTeam.wrapper h2 {
   text-align: center;
 }
-
-.teamContainer {
+.ourTeam.wrapper .teamContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 50% 50%;
   gap: 10px;
-  margin-bottom: 50px;
 }
-
-.teamPlayers {
+.ourTeam.wrapper .teamPlayers {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   grid-column: 1/span 2;
   grid-row: row;
   background-color: #f6f6f6;
-  padding-left: 20px;
+  padding-left: 5%;
 }
-.teamPlayers h4 {
-  text-transform: uppercase;
-}
-
-.imgA {
+.ourTeam.wrapper .imgA {
   grid-column: 3/span 1;
   grid-row: row;
 }
-
-.imgB {
+.ourTeam.wrapper .imgB {
   grid-column: 4/span 1;
   grid-row: row;
 }
-
-.imgC {
+.ourTeam.wrapper .imgC {
   grid-column: 1/span 1;
   grid-row: row 2;
 }
-
-.imgD {
+.ourTeam.wrapper .imgD {
   grid-column: 2/span 1;
   grid-row: row 2;
 }
-
-.imgE {
+.ourTeam.wrapper .imgE {
   grid-column: 3/span 1;
   grid-row: row 2;
 }
-
-.workWithUs {
+.ourTeam.wrapper .workWithUs {
   text-align: center;
-  align-items: center;
   grid-column: 4/span 1;
   grid-row: row 2;
 }
-.workWithUs p {
+.ourTeam.wrapper .workWithUs p {
   text-transform: uppercase;
   padding-top: 25%;
 }
-.workWithUs span {
+.ourTeam.wrapper .workWithUs span {
   display: block;
 }
 
@@ -448,10 +423,10 @@ html {
   justify-content: center;
   width: 50%;
   text-align: center;
-  padding: 0 80px;
+  padding: 0 5%;
   transform: color 0.3s;
 }
-.viewPortfolio button {
+.viewPortfolio .portfolioContainer button {
   background-color: #f6f6f6;
   margin: 0 auto;
   padding: 15px;
@@ -459,11 +434,10 @@ html {
   font-weight: bold;
   border: none;
 }
-.viewPortfolio button:hover, .viewPortfolio button:focus {
-  color: #c3dab7;
+.viewPortfolio .portfolioContainer button:hover, .viewPortfolio .portfolioContainer button:focus {
+  cursor: pointer;
 }
-
-.viewPortfolioImg {
+.viewPortfolio .viewPortfolioImg {
   width: 50%;
 }
 
@@ -476,7 +450,7 @@ header nav ul {
   align-items: center;
 }
 header nav ul li {
-  margin-left: 30px;
+  margin-left: 20%;
 }
 header nav ul li i {
   margin-left: 20px;
@@ -502,14 +476,36 @@ footer::before {
   content: "";
   display: block;
   position: absolute;
-  top: 75%;
+  top: 70%;
   height: 1px;
   width: 100%;
   background-color: #f6f6f6;
 }
+footer .footerContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5%;
+}
 footer > h3 {
-  padding: 100px 0 50px 0;
+  padding: 10% 0 10% 0;
   text-align: center;
+}
+footer .contactUs,
+footer .recentPosts,
+footer .twitterWidget {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+footer .contactUs p {
+  margin: 0;
+}
+footer .contactUs ul {
+  display: flex;
+  margin-top: 20px;
+}
+footer .contactUs ul li {
+  padding-right: 20px;
 }
 footer .recentPosts ul {
   list-style: disc;
@@ -522,46 +518,20 @@ footer .recentPosts a {
 footer .recentPosts a:hover, footer .recentPosts a:focus {
   color: #333;
 }
-
-.footerContainer {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 50px;
-}
-
-.contactUs,
-.recentPosts,
-.twitterWidget {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-}
-
-.contactUs p {
-  margin: 0;
-}
-.contactUs ul {
-  display: flex;
-  margin-top: 20px;
-}
-.contactUs ul li {
-  padding-right: 20px;
-}
-
-.twitterWidget input[type=email] {
+footer .twitterWidget input[type=email] {
   padding: 10px 20px;
   border: none;
 }
-.twitterWidget ::-moz-placeholder {
+footer .twitterWidget ::-moz-placeholder {
   color: grey;
 }
-.twitterWidget :-ms-input-placeholder {
+footer .twitterWidget :-ms-input-placeholder {
   color: grey;
 }
-.twitterWidget ::placeholder {
+footer .twitterWidget ::placeholder {
   color: grey;
 }
-.twitterWidget button {
+footer .twitterWidget button {
   background-color: #c3dab7;
   border: none;
   padding: 10px 10px 8px;
@@ -576,7 +546,7 @@ footer .recentPosts a:hover, footer .recentPosts a:focus {
 }
 
 .blogContainer {
-  padding-top: 80px;
+  padding-top: 5%;
 }
 .blogContainer > p {
   text-transform: uppercase;
@@ -585,37 +555,35 @@ footer .recentPosts a:hover, footer .recentPosts a:focus {
   font-style: normal;
   font-weight: bold;
 }
-
-.blogAuthorContainer {
+.blogContainer .blogAuthorContainer {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
   border-bottom: 1px solid grey;
 }
-.blogAuthorContainer .blogAuthor {
+.blogContainer .blogAuthorContainer .blogAuthor {
   display: flex;
 }
-.blogAuthorContainer img {
+.blogContainer .blogAuthorContainer img {
   border-radius: 50%;
 }
-.blogAuthorContainer p {
+.blogContainer .blogAuthorContainer p {
   margin-left: 20px;
   text-transform: uppercase;
   font-weight: bold;
 }
-.blogAuthorContainer span {
+.blogContainer .blogAuthorContainer span {
   display: block;
   text-transform: none;
   font-weight: normal;
 }
-.blogAuthorContainer .blogDetails {
+.blogContainer .blogDetails {
   display: flex;
 }
-
-.blogPost {
+.blogContainer .blogPost {
   text-align: justify;
 }
-.blogPost em {
+.blogContainer .blogPost em {
   font-style: normal;
   font-weight: bold;
 }
@@ -664,7 +632,7 @@ footer .recentPosts a:hover, footer .recentPosts a:focus {
 }
 .commentContainer .comment {
   width: 100%;
-  margin-left: 25px;
+  margin-left: 3%;
   background-color: #f6f6f6;
   position: relative;
 }
@@ -686,13 +654,13 @@ footer .recentPosts a:hover, footer .recentPosts a:focus {
   left: -6px;
 }
 
-.leaveComment h2 {
+.leaveComment h3 {
   padding-top: 50px;
   border-bottom: 1px solid grey;
 }
 
 .contactForm {
-  padding-bottom: 100px;
+  padding-bottom: 20px;
 }
 .contactForm input {
   border-bottom: 1px solid grey;
@@ -743,34 +711,39 @@ footer .recentPosts a:hover, footer .recentPosts a:focus {
 .contactMain h2 span {
   display: block;
 }
-
-.contactDetails {
-  padding-top: 100px;
+.contactMain .contactDetails {
+  padding-top: 5%;
 }
-.contactDetails p {
+.contactMain .contactDetails p {
   width: 50%;
 }
-
-.contactIcons {
+.contactMain .contactIcons {
   display: flex;
   justify-content: space-around;
-  padding: 100px 0;
+  padding: 5% 0;
 }
-.contactIcons i {
+.contactMain .contactIcons i {
   font-size: 1.5rem;
 }
-.contactIcons p {
+.contactMain .contactIcons p {
   width: 100%;
   margin: 5px 0;
 }
 
+.backgroundImg {
+  background-image: url(../../assets/contact-2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
 @media (max-width: 1350px) {
-  main .features {
+  .features {
     background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../../assets/home-4.jpeg);
   }
 }
 @media (max-width: 1100px) {
-  div.featuresContainer {
+  .features .featuresContainer {
     margin-left: 20%;
   }
 }
@@ -787,35 +760,35 @@ footer .recentPosts a:hover, footer .recentPosts a:focus {
   }
 }
 @media (max-width: 900px) {
-  .teamContainer {
+  .ourTeam .teamContainer {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
   }
-  .teamContainer .teamPlayers {
+  .ourTeam .teamContainer .teamPlayers {
     grid-column: 1/span 3;
     grid-row: row;
   }
-  .teamContainer .imgA {
+  .ourTeam .teamContainer .imgA {
     grid-column: 1/span 1;
     grid-row: row 2;
   }
-  .teamContainer .imgB {
+  .ourTeam .teamContainer .imgB {
     grid-column: 2/span 1;
     grid-row: row 2;
   }
-  .teamContainer .imgC {
+  .ourTeam .teamContainer .imgC {
     grid-column: 3/span 1;
     grid-row: row 2;
   }
-  .teamContainer .imgD {
+  .ourTeam .teamContainer .imgD {
     grid-column: 1/span 1;
     grid-row: row 3;
   }
-  .teamContainer .imgE {
+  .ourTeam .teamContainer .imgE {
     grid-column: 2/span 1;
     grid-row: row 3;
   }
-  .teamContainer .workWithUs {
+  .ourTeam .teamContainer .workWithUs {
     grid-column: 3/span 1;
     grid-row: row 3;
   }
@@ -829,10 +802,10 @@ footer .recentPosts a:hover, footer .recentPosts a:focus {
     padding: 0;
   }
 
-  .blogAuthorContainer {
+  .blogContainer .blogAuthorContainer {
     display: block;
   }
-  .blogAuthorContainer .blogDetails {
+  .blogContainer .blogAuthorContainer .blogDetails {
     justify-content: space-between;
   }
 
@@ -849,37 +822,30 @@ footer .recentPosts a:hover, footer .recentPosts a:focus {
   }
 
   footer::before {
-    top: 90%;
+    top: 80%;
   }
 
-  .footerContainer {
+  footer .footerContainer {
     display: block;
     text-align: center;
   }
-  .footerContainer .contactUs ul {
+  footer .footerContainer .contactUs ul {
     justify-content: center;
-  }
-  .footerContainer .recentPosts,
-.footerContainer .twitterWidget {
-    margin-top: 30px;
   }
 }
 @media (max-width: 768px) {
-  main .brandingContainer {
+  .brandingCircle .brandingContainer {
     display: block;
     width: 100%;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 5%;
   }
 
   main .featuresContainer {
     display: block;
-    padding: 20px 0;
   }
   main .featuresContainer .box {
     width: 100%;
-  }
-  main .featuresContainer .boxF {
     margin-bottom: 0;
   }
 
@@ -891,7 +857,7 @@ footer .recentPosts a:hover, footer .recentPosts a:focus {
     width: 100%;
   }
   .viewPortfolio .portfolioContainer {
-    padding-bottom: 50px;
+    padding: 5%;
   }
   .viewPortfolio .viewPortfolioImg {
     height: 200px;
@@ -901,9 +867,8 @@ footer .recentPosts a:hover, footer .recentPosts a:focus {
     position: static;
   }
 
-  .contactDetails,
-.contactIcons {
-    padding: 50px 0;
+  .backgroundImg {
+    height: 25vh;
   }
 }
 @media (max-width: 480px) {
@@ -925,15 +890,11 @@ footer .recentPosts a:hover, footer .recentPosts a:focus {
     top: 10px;
   }
 
-  .indexBranding {
-    padding-top: 100px;
-  }
-
   .brandingContainer h2 {
     font-size: 1.1rem;
   }
 
-  .brandingImage::after {
+  .brandingCircle .brandingImage::after {
     background-size: 100px 100px;
     height: 100px;
     width: 100px;
@@ -954,11 +915,40 @@ footer .recentPosts a:hover, footer .recentPosts a:focus {
     display: none;
   }
 
-  .ourTeam {
-    padding: 100px 0 50px 0;
+  .ourTeam.wrapper .teamContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    gap: 10px;
   }
-
-  .teamPlayers p {
+  .ourTeam.wrapper .teamContainer .teamPlayers {
+    grid-column: 1/span 2;
+    grid-row: row;
+  }
+  .ourTeam.wrapper .teamContainer .imgA {
+    grid-column: 1/span 1;
+    grid-row: row 2;
+  }
+  .ourTeam.wrapper .teamContainer .imgB {
+    grid-column: 2/span 1;
+    grid-row: row 2;
+  }
+  .ourTeam.wrapper .teamContainer .imgC {
+    grid-column: 1/span 1;
+    grid-row: row 3;
+  }
+  .ourTeam.wrapper .teamContainer .imgD {
+    grid-column: 2/span 1;
+    grid-row: row 3;
+  }
+  .ourTeam.wrapper .teamContainer .imgE {
+    grid-column: 1/span 1;
+    grid-row: row 4;
+  }
+  .ourTeam.wrapper .teamContainer .workWithUs {
+    grid-column: 2/span 1;
+    grid-row: row 4;
+  }
+  .ourTeam.wrapper .teamPlayers p {
     display: none;
   }
 
@@ -988,6 +978,10 @@ footer .recentPosts a:hover, footer .recentPosts a:focus {
   .posts .relatedPost {
     width: calc(50% - 20px);
   }
+
+  .contactMain .contactDetails p {
+    width: 100%;
+  }
 }
 @media (max-width: 350px) {
   header.indexHeader {
@@ -996,43 +990,6 @@ footer .recentPosts a:hover, footer .recentPosts a:focus {
 
   .indexBranding::before {
     height: 50px;
-  }
-
-  .ourTeam {
-    padding: 100px 0 50px 0;
-  }
-
-  .teamContainer {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-  .teamContainer .teamPlayers {
-    grid-column: 1/span 2;
-    grid-row: row;
-  }
-  .teamContainer .imgA {
-    grid-column: 1/span 1;
-    grid-row: row 2;
-  }
-  .teamContainer .imgB {
-    grid-column: 2/span 1;
-    grid-row: row 2;
-  }
-  .teamContainer .imgC {
-    grid-column: 1/span 1;
-    grid-row: row 3;
-  }
-  .teamContainer .imgD {
-    grid-column: 2/span 1;
-    grid-row: row 3;
-  }
-  .teamContainer .imgE {
-    grid-column: 1/span 1;
-    grid-row: row 4;
-  }
-  .teamContainer .workWithUs {
-    grid-column: 2/span 1;
-    grid-row: row 4;
   }
 
   .blogDetails {

@@ -1,3 +1,6 @@
+// styling of the Blog page
+
+// header background image
 .blogHeader {
     background-image: url(../../assets/blog-1.jpeg);
     background-position: center;
@@ -7,7 +10,7 @@
 }
 
 .blogContainer {
-    padding-top: 80px;
+    padding-top: 5%;
     > p {
         text-transform: uppercase;
             em {
@@ -15,9 +18,7 @@
                 font-weight: bold;
             }
     }
-}
-
-.blogAuthorContainer {
+    .blogAuthorContainer {
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
@@ -37,19 +38,22 @@
                 display: block;
                 text-transform: none;
                 font-weight: normal;
-        }
-        .blogDetails {
-        display: flex;
+        }   
     }
-}
 
-.blogPost {
+        .blogDetails {
+            display: flex;
+        }
+
+    .blogPost {
     text-align: justify;
         em {
             font-style: normal;
             font-weight: bold;
 }
 }
+}
+
 
 .socialContainer {
     h4 {
@@ -69,8 +73,7 @@
                         background-color: $lightSage;
                         padding: 5px;
                 }
-                }
-                
+                }       
         }
 }
 
@@ -100,7 +103,7 @@
         }
         .comment {
             width: 100%;
-            margin-left: 25px;
+            margin-left: 3%;
             background-color: $whiteTwo;
             position: relative;
                 p {
@@ -124,7 +127,7 @@
 }
 
 .leaveComment {
-    h2 {
+    h3 {
         padding-top: 50px;
         border-bottom: 1px solid grey;
     }
