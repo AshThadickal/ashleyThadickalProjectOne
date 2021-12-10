@@ -19,6 +19,7 @@
     <!-- Beginning of Header Section -->
     <header class="indexHeader">
         <div class="wrapper">
+            <!-- Beginning of Nav Section -->
             <nav>
                 <ul>
                     <li>
@@ -31,6 +32,7 @@
                         <a href="#portfolio">portfolio</a>
                     </li>
                 </ul>
+                <!-- Although this was in the middle of the Nav, I didn't include it within the ul as semantically, it wasn't part of the list in my view and I wouldn't want any screen readers to read it as part of the list -->
                 <h1>creative</h1>
                 <ul>
                     <li>
@@ -40,141 +42,199 @@
                         <a href="contact.html">contact</a>
                     </li>
                     <li class="icon">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                        <span class="srOnly">Click to Search the Website</span>
                     </li>
                     <li class="icon">
-                        <i class="fas fa-shopping-bag"></i>
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        <span class="srOnly">Click for your Shopping Cart</span>
                     </li>
                 </ul>
             </nav>
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" aria-hidden="true"></i><span class="srOnly">Click for our Navigation</span>
             <!-- End of Nav -->
         </div>
     </header>
     <!-- End of Header -->
+
+    <!-- Beginning of Main Section -->
     <main>
+        <!-- Beginning of Branding, Design & Develop Section -->
         <section class="indexBranding">
-            <div class="wrapper brandingCircle">
-                
+            <div class="wrapper">
+
                 <div class="brandingImage">
-                    <img src="./assets/home-2.jpeg" alt="A desktop with a snake plant, Apple desktop and calendar on the wall">
+                    <img src="./assets/home-2.jpeg" alt="A desktop with a snake plant, Apple desktop and calendar on the wall and a emblem saying Branding and Website Pros">
                 </div>
+                <!-- End of image portion -->
 
                 <div class="brandingContainer">
                     <h2>branding</h2>
                     <p>Venture first mover advantage incubator metrics focus backing business-to-consumer.</p>
                 </div>
-
                 <div class="brandingContainer">
                     <h2>design & develop</h2>
                     <p>Venture first mover advantage incubator metrics focus backing business-to-consumer.</p>
                 </div>
-                
+                <!-- End of Branding, Design & Develop portion -->
             </div>
+            <!-- End of Wrapper -->
         </section>
+        <!-- End of Branding, Design & Develop Section -->
 
+        <!-- Beginning of the Image with Summary Section -->
         <section class="wrapper imageSummary">
-            <div>
-                <i class="fas fa-chevron-left"></i>
-                <img src="./assets/home-3.jpeg" alt="Photograph of a man in a bathing suit with a story to the left of the photograph">
-                <i class="fas fa-chevron-right"></i>
-            </div>
-            <p>Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding. Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy. Product management early adopters user experience metrics advisor gamification responsive web design hackathon termsheet backing series.</p>
-        </section>
 
+            <div>
+                <i class="fas fa-chevron-left" aria-hidden="true"></i><span class="srOnly">Click to move left through images</span>
+                <img src="./assets/home-3.jpeg" alt="Photograph of a man in a bathing suit with a story to the left of the photograph">
+                <i class="fas fa-chevron-right" aria-hidden="true"></i><span class="srOnly">Click to move right through images</span>
+            </div>
+
+            <p>Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding. Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy. Product management early adopters user experience metrics advisor gamification responsive web design hackathon termsheet backing series.</p>
+
+        </section>
+        <!-- End of the Image with Summary Section -->
+
+        <!-- Beginning of the Summary of Features Section -->
         <section class="features">
             
             <div class="featuresContainer">
+                <!-- Each summary of feature is contained within a div -->
                 <div class="box boxA">
-                    <i class="fas fa-magic"></i>
+                    <i class="fas fa-magic" aria-hidden="true"></i>
                     <h3>unique design</h3>
                     <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>
                 </div>
+
                 <div class="box boxB">
-                    <i class="fas fa-map-pin"></i>
+                    <i class="fas fa-map-pin" aria-hidden="true"></i>
                     <h3>seo marketing</h3>
                     <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>
                 </div>
+
                 <div class="box boxC">
-                    <i class="fas fa-desktop"></i>
+                    <i class="fas fa-desktop" aria-hidden="true"></i>
                     <h3>retina ready</h3>
                     <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>    
                 </div>
+
                 <div class="box boxD">
-                    <i class="fas fa-shopping-bag"></i>
+                    <i class="fas fa-shopping-bag" aria-hidden="true"></i>
                     <h3>ecommerce ready</h3>
                     <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>
                 </div>
+
                 <div class="box boxE">
-                    <i class="fas fa-sliders-h"></i>
+                    <i class="fas fa-sliders-h" aria-hidden="true"></i>
                     <h3>advanced options</h3>
                     <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>
                 </div>
+
                 <div class="box boxF">
-                    <i class="fas fa-smile"></i>
+                    <i class="fas fa-smile" aria-hidden="true"></i>
                     <h3>customizable</h3>
                     <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>
-                </div>         
+                </div>   
+                 
             </div>
+            <!-- End of the features container section -->
         </section>
+        <!-- End of the Features section -->
 
+        <!-- Beginning of the Teams section -->
         <section class="wrapper ourTeam">
+
             <h2>meet our team</h2>
+
             <div class="teamContainer">
+                <!-- Each compartment of the team section is contained within a div -->
                 <div class="teamPlayers">
                     <h3>team players</h3>
                     <p>Pitch client interaction design ownership disruptive leverage prototype coverstion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface.</p>
-                </div>          
+                </div>  
+
                 <div class="gridImg imgA">
                     <img src="./assets/home-5.jpeg" alt="Man looking straight on to camera with a stripped shirt, grey vest and orange tie">
                 </div>
+
                 <div class="gridImg imgB">
                     <img src="./assets/home-6.jpeg" alt="Woman looking to the left toward the camera with a black and beige patterned shirt">
                 </div>
+
                 <div class="gridImg imgC">
                     <img src="./assets/home-7.jpeg" alt="Woman looking straight on to camera with a stripped tank top on">
                 </div>
+
                 <div class="gridImg imgD">
                     <img src="./assets/home-8.jpeg" alt="Man looking straigt on to camera with a black shirt">
                 </div>
+
                 <div class="gridImg imgE">
                     <img src="./assets/home-9.jpeg" alt="Woman looking on straight to camera with a grey sweater">
                 </div>
+                
                 <div class="workWithUs">
                     <p>want to work <span>with us!</span></p>
                 </div>
-            </div>
-        </section>
 
+            </div>
+            <!-- End of the teams container section -->
+        </section>
+        <!-- End of the teams section -->
+
+        <!-- Beginning of the view portfolio button section -->
         <section class="viewPortfolio">
+
             <div class="portfolioContainer">
                 <h3>drop us a line</h3>
                 <p>Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface.</p>
                 <button>view portfolio</button>
             </div>
+
             <div class="viewPortfolioImg">
                 <img src="./assets/home-10.jpeg" alt="cell phone on a desk with a file folder containing documents and take-out coffee cups on top of the folder and desk">
             </div>
+
         </section>
+        <!-- End of the portfolio button section -->
     </main>
+    <!-- End of the man section -->
+    
+    <!-- Beginning of Footer section -->
     <footer>
         <section class="wrapper footerContainer">
+
             <div class="contactUs">
                 <h3>contact us</h3>
+
                 <p>6591 Orchard Street, NY 1002, United States</p>
                 <p>Email: contact@onepro.co</p>
                 <p>Phone 01: +00 (9) 123 3456 789</p>
                 <p>Phone 02: +00 (9) 123 3456 788</p>
                 <p>Fax: +00 (9) 643 6543 898</p>
+
                 <ul>
-                    <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-instagram"></i></li>
+                    <li>
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        <span class="srOnly">Click for our Facebook Page</span>
+                    </li>
+                    <li>
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                        <span class="srOnly">Click for our Twitter Page</span>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                        <span class="srOnly">Click for our Instagram Page</span>
+                    </li>
                 </ul>
+
             </div>
+            <!-- End of the Contact Us portion -->
     
             <div class="recentPosts">
                 <h3>recent posts</h3>
+
                 <ul>
                     <li>
                         <a href="#conversion">Conversion hackathon partner</a>
@@ -193,20 +253,23 @@
                     </li>
                 </ul>
             </div>
+            <!-- End of the Recent Posts portion -->
     
             <div class="twitterWidget">
                 <h3>twitter widget</h3>
                 <p>Signup for emails and notifications below</p>
+
                 <form action="">
-    
                     <label for="email" class="sr-only"></label>
                     <input type="email" name="email" placeholder="Enter your email"><span><button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button></span>
                 </form>
             </div>
+            <!-- End of the Twitter Widget/sign up for emails portion -->
         </section>
     
         <h3 class="wrapper">creative agency</h3>
     
     </footer>
+    <!-- End of the Footer -->
 </body>
 </html>

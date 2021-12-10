@@ -5,13 +5,13 @@
     background-image: url(../../assets/home-1.jpeg);
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 90vh;
     position: relative;
         &::after {
             content: "";
             display: block;
             width: 1px;
-            height: 100px;
+            height: 90px;
             background-color: grey;
             position: absolute;
             left: 50%;
@@ -31,7 +31,7 @@
         content: "";
         display: block;
         width: 1px;
-        height: 100px;
+        height: 90px;
         background-color: grey;
         position: absolute;
         left: 50%;
@@ -104,7 +104,7 @@
         content: "";
         display: block;
         width: 1px;
-        height: 100px;
+        height: 90px;
         background-color: grey;
         position: absolute;
         left: 50%;
@@ -152,7 +152,7 @@
         .teamContainer {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 50% 50%;
+            grid-template-rows: auto;
             gap: 10px;
         }
             .teamPlayers {
@@ -166,33 +166,33 @@
             }
 
             .imgA {
-                grid-column: 3 / span 1;
+                grid-column: 3;
                 grid-row: row;
             }
 
             .imgB {
-                grid-column: 4 / span 1;
+                grid-column: 4;
                 grid-row: row;
             }
 
             .imgC {
-                grid-column: 1 / span 1;
+                grid-column: 1;
                 grid-row: row 2;
             }
 
             .imgD {
-                grid-column: 2 / span 1;
+                grid-column: 2;
                 grid-row: row 2;
             }
 
             .imgE {
-                grid-column: 3 / span 1;
+                grid-column: 3;
                 grid-row: row 2;
             }
 
             .workWithUs {
                 text-align: center;
-                grid-column: 4 / span 1;
+                grid-column: 4;
                 grid-row: row 2;
                     p {
                         text-transform: uppercase;
@@ -235,3 +235,4 @@
         width: 50%;
     }
 }
+

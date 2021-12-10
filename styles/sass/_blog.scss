@@ -9,6 +9,7 @@
     height: 100vh;
 }
 
+// styling of the top portion of the blog post (up to an including the first para.)
 .blogContainer {
     padding-top: 5%;
     > p {
@@ -18,6 +19,8 @@
                 font-weight: bold;
             }
     }
+
+    // styling of the author row
     .blogAuthorContainer {
     display: flex;
     justify-content: space-between;
@@ -41,10 +44,12 @@
         }   
     }
 
-        .blogDetails {
-            display: flex;
-        }
+    // styling of the blog details (ie. date, etc.)
+    .blogDetails {
+        display: flex;
+    }
 
+    // styling of the blog writing
     .blogPost {
     text-align: justify;
         em {
@@ -54,7 +59,7 @@
 }
 }
 
-
+// styling of the social media icons
 .socialContainer {
     h4 {
         text-transform: uppercase;
@@ -77,6 +82,7 @@
         }
 }
 
+// styling of the related posts
 .posts {
     h3 {
         border-bottom: 1px solid grey;
@@ -95,6 +101,7 @@
     }
 }
 
+// styling of the comments section
 .commentContainer {
     display: flex;
     margin-bottom: 20px;
@@ -126,6 +133,7 @@
         }
 }
 
+// styling of the leave a comment section
 .leaveComment {
     h3 {
         padding-top: 50px;

@@ -1,3 +1,4 @@
+
 header nav {
     display: flex;
     justify-content: space-around;
@@ -16,6 +17,23 @@ header nav {
             margin: 15px 30px;
         }
 }
+
+// Styling to have the '2' on top of the shopping bag
+    header .fa-shopping-bag {
+        position: relative;
+    }
+    header .fa-shopping-bag::after {
+        content: "2";
+        height: 15px;
+        width: 15px;
+        display: block;
+        background-color: $lightSage;
+        border-radius: 50%;
+        position: absolute;
+        top: 8px;
+        left: 5px;
+        text-align: center;
+    }
 
     .home {
         text-decoration: line-through;

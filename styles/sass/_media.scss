@@ -1,16 +1,19 @@
 
 @media (max-width: 1350px) {
+    // adding a transparant layer to the index.html features section
     .features {
         background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../../assets/home-4.jpeg)
     }
 }
 
 @media (max-width: 1100px) {
-    .features .featuresContainer {
-        margin-left: 20%
+    // change to the index.html features section
+    .features {
+        .featuresContainer {
+            margin-left: 20%
+        }
     }
 }
-
 @media (max-width: 940px) {
     .indexHeader ul,
     .indexNav ul,
@@ -25,44 +28,50 @@
 }
 
 @media (max-width: 900px) {
-    .ourTeam .teamContainer {
+    // changes to the format of the grid for the team players section
+    .ourTeam.wrapper {
+
+        .teamContainer {
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
         gap: 10px;
             .teamPlayers {
                 grid-column: 1 / span 3;
                 grid-row: row;
             }
             .imgA {
-                grid-column: 1 / span 1;
+                grid-column: 1;
                 grid-row: row 2;
             }
             
             .imgB {
-                grid-column: 2 / span 1;
+                grid-column: 2;
                 grid-row: row 2;
             }
 
             .imgC {
-                grid-column: 3 / span 1;
+                grid-column: 3;
                 grid-row: row 2;
             }
 
             .imgD {
-                grid-column: 1 / span 1;
+                grid-column: 1;
                 grid-row: row 3;
             }
 
             .imgE {
-                grid-column: 2 / span 1;
+                grid-column: 2;
                 grid-row: row 3;
             }
 
             .workWithUs {
-                grid-column: 3 / span 1;
+                grid-column: 3;
                 grid-row: row 3;
             }
     }
+}
 
+    // chages to the blog.html page
     .blogHeader {
         background-size: contain;
         height: 50vh;
@@ -93,8 +102,9 @@
         }
     }
 
+    // changes to the footer
     footer::before {
-        top: 80%;
+        top: 85%;
     }
 
     footer .footerContainer {
@@ -107,6 +117,7 @@
 }
 
 @media (max-width: 768px) {
+    // changes to the index.html branding section
     .brandingCircle .brandingContainer {
         display: block;
         width: 100%;
@@ -114,6 +125,7 @@
         padding-bottom: 5%;
     }
 
+    // changes to the index.html features section
     main .featuresContainer {
         display: block; 
             .box {
@@ -122,6 +134,7 @@
             }
     }
 
+    // changes to the index.html view portfolio section
     .viewPortfolio {
         display: block;
             .portfolioContainer,
@@ -138,6 +151,7 @@
             }
     }
 
+    // change to the contact.html header
     .contactMain h2 {
         position: static;
             
@@ -146,13 +160,21 @@
                     height: 25vh;
                 }
     
+    // remove the line above creative agency  
+    footer::before {
+        display: none;
+    }
+    
 }
 
 @media (max-width: 480px) {
+    // change to the index.html header background image
     header.indexHeader {
         height: 80vh;
         background-size: cover;
     }
+
+    // replacing the nav with a burger menu 
     .indexHeader ul,
     .indexNav ul,
     .blogNav ul {
@@ -166,6 +188,7 @@
         top: 10px;
     }
 
+    // change to the html.index branding section
     .brandingContainer h2 {
         font-size: 1.1rem;
    
@@ -181,6 +204,7 @@
         width: 50%;
     }
 
+    // changes to the index.html features section
     main .features {
         display: block;
             .featuresContainer {
@@ -192,45 +216,43 @@
             }
     }
 
-    // .ourTeam {
-    //     padding: 100px 0 50px 0;
-    // }
+    // changes to the index.html team section
     .ourTeam.wrapper {
         .teamContainer {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 50% 50%;
             gap: 10px;
                 .teamPlayers {
-                    grid-column: 1 / span 2;
+                    grid-column: 1;
                     grid-row: row;
                 }
                 .imgA {
-                    grid-column: 1 / span 1;
+                    grid-column: 1;
                     grid-row: row 2;
                 }
                 
                 .imgB {
-                    grid-column: 2 / span 1;
+                    grid-column: 2;
                     grid-row: row 2;
                 }
 
                 .imgC {
-                    grid-column: 1 / span 1;
+                    grid-column: 1;
                     grid-row: row 3;
                 }
 
                 .imgD {
-                    grid-column: 2 / span 1;
+                    grid-column: 2;
                     grid-row: row 3;
                 }
 
                 .imgE {
-                    grid-column: 1 / span 1;
+                    grid-column: 1;
                     grid-row: row 4;
                 }
 
                 .workWithUs {
-                    grid-column: 2 / span 1;
+                    grid-column: 2;
                     grid-row: row 4;
                 }               
             }
@@ -239,6 +261,7 @@
                     }
     }
 
+    // changes to the contact.html page
     .contactDetails {
         p {
             width: 100%;
@@ -252,6 +275,7 @@
         }
     }
 
+    // changes to the blog.html page
     .blogHeader {
         height: 25vh;
     }
@@ -278,6 +302,7 @@
 }
 
 @media (max-width: 350px) {
+    // chages to the index.html page
     header.indexHeader {
         height: 35vh;    
     }
@@ -288,12 +313,7 @@
         }
     }
 
-    // .ourTeam {
-    //     padding: 100px 0 50px 0;
-    // }
-
-    
-
+    // changes to the blog.html section
     .blogDetails {
         flex-direction: column;
     }

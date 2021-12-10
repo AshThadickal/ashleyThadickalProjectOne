@@ -41,34 +41,47 @@
                         <a href="contact.html">contact</a>
                     </li>
                     <li class="icon">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                        <span class="srOnly">Click to Search our Webstite</span>
                     </li>
                     <li class="icon">
-                        <i class="fas fa-shopping-bag"></i>
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        <span class="srOnly">Click for your shopping bag</span>
                     </li>
                 </ul>
             </nav>
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" aria-hidden="true"></i><span class="srOnly">Click for our the Navigation</span>
+            <!-- End of Nav -->
     </header>
 
     <!-- Beginning of Main -->
     <main>
 
         <section>
+        <!-- Beginnig of blog post -->
         <article class="wrapper blogContainer">
             <h2>how to run a creative agency</h2>
             <p><a href="index.html">home</a> / <a href="blog.html">blog</a> / <em>How to Run a Creative Agency</em></p>
+            
+            <!-- Container holding Author information -->
             <div class="blogAuthorContainer">
+
                 <div class="blogAuthor">
                     <img src="./assets/blog-2.jpeg" alt="Author of the Blog, Alex">
                     <p>alex<span>Administrator</span></p>
                 </div>
+                <!-- End of Blog Author information -->
+
                 <div class="blogDetails">
                     <p>date<span>July 31, 2018</span></p>
                     <p>category<span>Entertainment, Business</span></p>
                     <p>tags<span>Design, Web, Lifestyle, Site</span></p>
                 </div>
+                <!-- End of Blog Details -->
+
             </div>
+            <!-- End of Blog Author Container -->
+            
             <div class="blogPost">
                 <p><em>Analytics bandwidth bootstrapping seed round virality infographic ownership long tail gen-z stealth growth hacking ecosystem. Niche market MVP focus hackathon startup analytics backing low hangining fruit A/B testing agile development paradigm shift.</em></p>
 
@@ -78,41 +91,67 @@
 
                 <p>Crowdfunding conversion accelerator scrum project angel investor. Technology leverage handshake branding seed money lean startup business-to-business channles. Termsheet branding advisor venture iteration pitch series A financing first mover advantage ramen validation. Return on investment deployment analytics MVP. Scrum project learning curve equity social proof. Marketing conversion crowdsource business model canvas interaction design infrastructure android chrun rate agile development user experience ecosystem. Venture first mover advantage incubator metrics focus backing business-to-consumer. Innovator advisor incubator MVP.</p>
             </div>
+            <!-- End of blog post -->
 
+            <!-- Beginning of the social media icons -->
             <div class="socialContainer">
                 <h3>share:</h3>
 
                 <ul class="socialMedia">
-                    <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-instagram"></i></li>
+                    <li>
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        <span class="srOnly">Click for our Facebook Page</span>
+                    </li>
+                    <li>
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                        <span class="srOnly">Click for our Twitter Page</span>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                        <span class="srOnly">Click for our Instagram Page</span>
+                    </li>
                 </ul>
             </div>
+            <!-- End of social media icons -->
         </article>
+        <!-- End of blog post section -->
         </section>
 
+        <!-- Beginning of the related posts section -->
         <section class="wrapper posts">
             <h3>related posts</h3>
+
+            <!-- Beginning of the Posts Container -->
             <div class="postsContainer">
-            <div class="relatedPost">
-                <img src="./assets/blog-3.jpeg" alt="A desk with a MacBook, pair of glasses, 3 green plants in white planters, and a desk lamp">
-                <p>July 25, 2018</p>
+
+                <!-- Each related post is within its own div -->
+                <div class="relatedPost">
+                    <img src="./assets/blog-3.jpeg" alt="A desk with a MacBook, pair of glasses, 3 green plants in white planters, and a desk lamp">
+                    <p>July 25, 2018</p>
+                </div>
+
+                <div class="relatedPost">
+                    <img src="./assets/blog-4.jpeg" alt="a green plant in a dark grey planter with three dark grey and one white candle, a small cactus in a white planter and a wooden letter A all on the top corner of a bookshelf">
+                    <p>July 26, 2018</p>
+                </div>
+
+                <div class="relatedPost">
+                    <img src="./assets/blog-5.jpeg" alt="A clear mug with a dark drink on a cork coaster, a small green plant in a golden coaster, an upsidedown iPhone and a partial view of a laptop keyboard">
+                    <p>July 26, 2018</p>
+                </div>
+
             </div>
-            <div class="relatedPost">
-                <img src="./assets/blog-4.jpeg" alt="a green plant in a dark grey planter with three dark grey and one white candle, a small cactus in a white planter and a wooden letter A all on the top corner of a bookshelf">
-                <p>July 26, 2018</p>
-            </div>
-            <div class="relatedPost">
-                <img src="./assets/blog-5.jpeg" alt="A clear mug with a dark drink on a cork coaster, a small green plant in a golden coaster, an upsidedown iPhone and a partial view of a laptop keyboard">
-                <p>July 26, 2018</p>
-            </div>
-            </div>
+            <!-- End of Related Posts Container -->
         </section>
 
+        <!-- Beginning of comments section -->
         <section class="wrapper">
             <h3>02 comments</h3>
+
+            <!-- Each comment section has its own container -->
             <div class="commentContainer">
-                <img class="commentImg" src="./assets/blog-6.jpeg" alt="">
+               
+                <img class="commentImg" src="./assets/blog-6.jpeg" alt="photo of a female facing the camera">
                 <div class="comment">
                     <i class="fas fa-caret-left"></i>
                     <p>daniel vandaft<span> - Reply</span></p>
@@ -120,6 +159,8 @@
                     <p>Jul 17,2015 at 15 hours ago</p>
                 </div>
             </div>
+            <!-- End of the first comment -->
+
             <div class="commentContainer">
                 <img src="./assets/blog-7.jpeg" alt="">
                 <div class="comment">
@@ -129,10 +170,13 @@
                     <p>Jul 17,2015 at 15 hours ago</p>
                 </div>
             </div>
+            <!-- End of second comment -->
         </section>
 
+        <!-- Beginning of the leave a comment section -->
         <section class="wrapper leaveComment">
             <h3>leave a comment</h3>
+
             <form class="contactForm" action="#">
                 <label for="clientName" class="sr-only">Enter your name.</label>
                 <input type="text" name="clientName" id="clientName" placeholder="Enter your name...">
@@ -148,11 +192,16 @@
                 
                 <button type="submit">submit comment</button>
             </form>
-        </section>    
-    </main>
 
+        </section>  
+          <!-- end of the leave a comment section -->
+    </main>
+    <!-- end of main -->
+
+    <!-- beginning of the footer -->
     <footer>
         <section class="wrapper footerContainer">
+
             <div class="contactUs">
                 <h3>contact us</h3>
                 <p>6591 Orchard Street, NY 1002, United States</p>
@@ -166,7 +215,8 @@
                     <li><i class="fab fa-instagram"></i></li>
                 </ul>
             </div>
-    
+            <!-- end of the contact us portion -->
+
             <div class="recentPosts">
                 <h3>recent posts</h3>
                 <ul>
@@ -187,23 +237,24 @@
                     </li>
                 </ul>
             </div>
+            <!-- end of the recent posts section -->
     
             <div class="twitterWidget">
                 <h3>subscribe now</h3>
                 <p>Signup for emails and notifications below</p>
+
                 <form action="">
-    
                     <label for="email" class="sr-only"></label>
-                    <input type="email" name="email" placeholder="Enter your email"><span><button type="submit"><i
-                                class="fas fa-long-arrow-alt-right"></i></button></span>
+                    <input type="email" name="email" placeholder="Enter your email"><span><button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button></span>
                 </form>
             </div>
+            <!-- end of the twitter widget/subscribe section -->
         </section>
     
         <h3 class="wrapper">creative agency</h3>
     
     </footer>
-        
+    <!-- end of footer section -->
 
 
 </body>
