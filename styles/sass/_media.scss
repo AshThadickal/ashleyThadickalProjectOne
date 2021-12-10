@@ -1,6 +1,6 @@
 
 @media (max-width: 1350px) {
-    // adding a transparant layer to the index.html features section
+    // adding a transparant layer to the index.html features section ** Credit to Maxine Power for suggesting this solution!
     .features {
         background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../../assets/home-4.jpeg)
     }
@@ -118,11 +118,13 @@
 
 @media (max-width: 768px) {
     // changes to the index.html branding section
-    .brandingCircle .brandingContainer {
+    .indexBranding { 
+        .brandingContainer {
         display: block;
         width: 100%;
         margin: 0 auto;
         padding-bottom: 5%;
+    }
     }
 
     // changes to the index.html features section
