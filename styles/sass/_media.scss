@@ -176,6 +176,10 @@
         background-size: cover;
     }
 
+    h1 {
+        width: 100%;
+    }
+
     // replacing the nav with a burger menu 
     .indexHeader ul,
     .indexNav ul,
@@ -183,11 +187,25 @@
         display: none;
     }
 
-    .fa-bars {
+    .fa-bars,
+    .fa-times-circle {
         display: block;
         font-size: 1.5rem;
         position: absolute;
         top: 10px;
+        right: 10px;
+    }
+
+    // .hamburgerMenuDisplay {
+    //     width: 25%;
+    // }
+
+    .hamburgerMenuDisplay ul {
+        display: none;
+    }
+    .javaMenu {
+        display: block;
+        margin-top: 10px;
     }
 
     // change to the html.index branding section

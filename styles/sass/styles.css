@@ -471,7 +471,8 @@ header .fa-shopping-bag::after {
   text-decoration: line-through;
 }
 
-.fa-bars {
+.fa-bars,
+.hamburgerMenuDisplay {
   display: none;
 }
 
@@ -631,35 +632,56 @@ footer .twitterWidget button {
   width: calc(33% - 30px);
 }
 
-.commentContainer {
+.commentContainer,
+.addedComments {
   display: flex;
   margin-bottom: 20px;
 }
-.commentContainer img {
+.commentContainer img,
+.addedComments img {
   height: 75%;
 }
-.commentContainer .comment {
+.commentContainer .comment,
+.commentContainer .newComment,
+.addedComments .comment,
+.addedComments .newComment {
   width: 100%;
   margin-left: 3%;
   background-color: #f6f6f6;
   position: relative;
 }
-.commentContainer .comment p {
+.commentContainer .comment p,
+.commentContainer .newComment p,
+.addedComments .comment p,
+.addedComments .newComment p {
   padding-left: 20px;
 }
-.commentContainer .comment p:nth-child(2) {
+.commentContainer .comment p:nth-child(2),
+.commentContainer .newComment p:nth-child(2),
+.addedComments .comment p:nth-child(2),
+.addedComments .newComment p:nth-child(2) {
   text-transform: uppercase;
   font-weight: bold;
 }
-.commentContainer .comment p:nth-child(2) span {
+.commentContainer .comment p:nth-child(2) span,
+.commentContainer .newComment p:nth-child(2) span,
+.addedComments .comment p:nth-child(2) span,
+.addedComments .newComment p:nth-child(2) span {
   font-style: italic;
   font-weight: normal;
 }
-.commentContainer .comment i {
+.commentContainer .comment i,
+.commentContainer .newComment i,
+.addedComments .comment i,
+.addedComments .newComment i {
   position: absolute;
   color: #f6f6f6;
   top: 5px;
   left: -6px;
+}
+
+.addedComments {
+  display: block;
 }
 
 .leaveComment h3 {
@@ -890,17 +912,32 @@ footer .twitterWidget button {
     background-size: cover;
   }
 
+  h1 {
+    width: 100%;
+  }
+
   .indexHeader ul,
 .indexNav ul,
 .blogNav ul {
     display: none;
   }
 
-  .fa-bars {
+  .fa-bars,
+.fa-times-circle {
     display: block;
     font-size: 1.5rem;
     position: absolute;
     top: 10px;
+    right: 10px;
+  }
+
+  .hamburgerMenuDisplay ul {
+    display: none;
+  }
+
+  .javaMenu {
+    display: block;
+    margin-top: 10px;
   }
 
   .brandingContainer h2 {
