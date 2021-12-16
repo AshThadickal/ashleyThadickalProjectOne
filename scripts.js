@@ -16,6 +16,7 @@ creativeApp.init = function(){
 
 // create a function to hold the menu listener event to make menu functional
 creativeApp.attachMenuListener = function() {
+    // credit to Antoni Ibrahim for suggesting a different way to achieve the funtionality
     // using const within the function as it would be protected within the function 
     const menuIcon = document.querySelector('.fa-bars');
     const menuList = document.querySelector('.hamburgerMenuDisplay')
