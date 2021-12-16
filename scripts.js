@@ -34,12 +34,11 @@ formElement.addEventListener('submit', function(event) {
     const commentElemnt = document.querySelector('#clientComment')
     const userComment = commentElemnt.value;
 
-    console.log(userName);
-    console.log(userComment)
-    // create a new div to house the nameElement and commentElement
+    if (userName && userComment) {
+   // create a new div to house the nameElement and commentElement
     const divElement = document.createElement('div');
     divElement.className = 'newComment';
-    console.log(divElement);
+    
 
     // append the new div to the commentSection
     document.querySelector('.addedComments').append(divElement);
@@ -53,12 +52,13 @@ formElement.addEventListener('submit', function(event) {
     commentParagraph.textContent = userComment;
 
     // add the namePara. and commentPara. values to the new div
-    divElement.appendChild(nameParagraph);
-    divElement.appendChild(commentParagraph);
-
-
-    // need to create <p> elements for both and add textontent to both then append each to the new divElement then add that divElement to the end of the commentSection... might need to change some IDs, etc. so that it is just on the blog page
+    divElement.append(nameParagraph, commentParagraph);
     
+
+    // need to clear the input field
+    nameElement.value = '';
+    commentElemnt.value = '';
+    }
 
 
 })

@@ -683,6 +683,14 @@ footer .twitterWidget button {
 .addedComments {
   display: block;
 }
+.addedComments .newComment p:first-of-type {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.addedComments .newComment p:nth-child(2) {
+  text-transform: none;
+  font-weight: normal;
+}
 
 .leaveComment h3 {
   padding-top: 50px;

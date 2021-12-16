@@ -137,7 +137,17 @@
 }
 
 .addedComments {
-            display: block;
+        display: block;
+            .newComment {
+                p:first-of-type {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                p:nth-child(2) {
+                    text-transform: none;
+                    font-weight: normal;
+                }
+            }
         }
 
 // styling of the leave a comment section
