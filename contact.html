@@ -32,6 +32,7 @@
                         <a href="#portfolio">portfolio</a>
                     </li>
                 </ul>
+                <!-- Although this was in the middle of the Nav, I didn't include it within the ul as semantically, it wasn't part of the list in my view and I wouldn't want any screen readers to read it as part of the list -->
                 <h1>creative</h1>
                 <ul>
                     <li>
@@ -42,7 +43,7 @@
                     </li>
                     <li class="icon">
                         <i class="fas fa-search" aria-hidden="true"></i>
-                        <span class="srOnly">Click here to Search</span>
+                        <span class="srOnly">Click to Search the Website</span>
                     </li>
                     <li class="icon">
                         <i class="fas fa-shopping-bag" aria-hidden="true"></i>
@@ -50,7 +51,25 @@
                     </li>
                 </ul>
             </nav>
-            <i class="fa fa-bars" aria-hidden="true"></i><span class="srOnly">Click here for the Navigation</span>
+            
+            <div class="mobileNavContainer">
+                <button id="mobileButton"><i class="fa fa-bars" aria-hidden="true"></i><span class="srOnly">Click for our
+                        Navigation</span></button>
+                <nav class="mobileNav">
+                    <ul>
+                        <li>
+                            <a href="index.html">home</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">blog</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
             <!-- End of Nav -->
         </div>
         <!-- This div is to house the background image -->
@@ -186,17 +205,18 @@
 
                 <form action="">    
                     <label for="email" class="srOnly">Please enter your email address</label>
-                    <input type="email" name="email" placeholder="Enter your email"><span><button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button></span>
+                    <input id="email" type="email" name="email" placeholder="Enter your email"><span><button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button></span>
                 </form>
 
             </div>
             <!-- End of the Twitter Widget/Subscribe Portion -->
         </section>
     
-        <h3 class="wrapper">creative agency</h3>
+        <p class="wrapper">creative agency</p>
     
     </footer>
     <!-- End of the Footer Section -->
 
+    <script src="scripts.js"></script>
 </body>
 </html>

@@ -102,13 +102,15 @@
 }
 
 // styling of the comments section
-.commentContainer {
+.commentContainer,
+.addedComments {
     display: flex;
     margin-bottom: 20px;
         img {
             height: 75%;
         }
-        .comment {
+        .comment,
+        .newComment {
             width: 100%;
             margin-left: 3%;
             background-color: $whiteTwo;
@@ -131,7 +133,22 @@
                     left: -6px;
                 }
         }
+        
 }
+
+.addedComments {
+        display: block;
+            .newComment {
+                p:first-of-type {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                p:nth-child(2) {
+                    text-transform: none;
+                    font-weight: normal;
+                }
+            }
+        }
 
 // styling of the leave a comment section
 .leaveComment {

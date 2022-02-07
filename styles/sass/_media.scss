@@ -103,10 +103,6 @@
     }
 
     // changes to the footer
-    footer::before {
-        top: 85%;
-    }
-
     footer .footerContainer {
         display: block;
         text-align: center;
@@ -119,12 +115,21 @@
 @media (max-width: 768px) {
     // changes to the index.html branding section
     .indexBranding { 
+        .brandingImage {
+            &::after {
+                background-size: 100px 100px;
+                height: 100px;
+                width: 100px;
+                left: -35px;
+                top: -35px;
+            }
+        }
         .brandingContainer {
         display: block;
         width: 100%;
         margin: 0 auto;
         padding-bottom: 5%;
-    }
+        }
     }
 
     // changes to the index.html features section
@@ -162,11 +167,6 @@
                     height: 25vh;
                 }
     
-    // remove the line above creative agency  
-    footer::before {
-        display: none;
-    }
-    
 }
 
 @media (max-width: 480px) {
@@ -176,6 +176,10 @@
         background-size: cover;
     }
 
+    h1 {
+        width: 100%;
+    }
+
     // replacing the nav with a burger menu 
     .indexHeader ul,
     .indexNav ul,
@@ -183,12 +187,12 @@
         display: none;
     }
 
-    .fa-bars {
+    .mobileNavContainer button {
         display: block;
-        font-size: 1.5rem;
-        position: absolute;
-        top: 10px;
     }
+    // .hamburgerMenuDisplay ul {
+    //     display: none;
+    // }
 
     // change to the html.index branding section
     .brandingContainer h2 {
