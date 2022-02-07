@@ -19,16 +19,17 @@ creativeApp.attachMenuListener = function() {
     // credit to Antoni Ibrahim for suggesting a different way to achieve the funtionality
     // using const within the function as it would be protected within the function 
     const menuIcon = document.querySelector('.fa-bars');
-    const menuList = document.querySelector('.hamburgerMenuDisplay')
-    const menuUl = document.querySelector('.hamburgerMenuDisplay ul')
+    const menuList = document.querySelector('.mobileNav')
+    // const menuUl = document.querySelector('.mobileNav ul')
     
     // adding event listener to the menuIcon such that a menu will pop down when clicked
     menuIcon.addEventListener('click', function() {
         menuIcon.classList.toggle('fa-bars');
         menuIcon.classList.toggle('fa-times-circle');
-        menuUl.style.display = 'block'
-        menuList.classList.toggle('javaMenu');
+        menuList.classList.toggle('expanded')
+        // menuUl.classList.toggle('expanded');
     })
+  
      
 }
 

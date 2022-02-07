@@ -9,7 +9,7 @@ footer {
                 content: "";
                 display: block;
                 position: absolute;
-                top: 70%;
+                bottom: 100px;
                 height: 1px;
                 width: 100%;
                 background-color: $whiteTwo;
@@ -18,11 +18,13 @@ footer {
         .footerContainer {
             display: flex;
             justify-content: space-between;
-            padding-top: 5%;      
+            padding-top: 50px;      
         }
 
-        > h3 {
-            padding: 10% 0 10% 0;
+        > p {
+            font-size: 1rem;
+            text-transform: uppercase;
+            padding: 10px 0 75px 0;
             text-align: center;
         }
 
@@ -31,7 +33,7 @@ footer {
         .twitterWidget {
             display: flex;
             flex-direction: column;
-            margin-left: 20px;
+            margin: 0 0 20px 20px;
         }
 
         // contact us column

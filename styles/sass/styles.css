@@ -255,7 +255,7 @@ html {
   top: 0;
 }
 .indexBranding .brandingImage {
-  width: 75%;
+  max-width: 450px;
   margin: 0 auto;
   position: relative;
 }
@@ -443,8 +443,10 @@ header nav ul {
 header nav ul li {
   margin-left: 20%;
 }
-header nav ul li i {
-  margin-left: 20px;
+header nav ul li button {
+  border: none;
+  width: 15px;
+  height: 15px;
 }
 header nav h2 {
   margin: 15px 30px;
@@ -471,9 +473,42 @@ header .fa-shopping-bag::after {
   text-decoration: line-through;
 }
 
-.fa-bars,
-.hamburgerMenuDisplay {
+.mobileNavContainer {
+  position: relative;
+}
+.mobileNavContainer button {
   display: none;
+  font-size: 1.5rem;
+  position: absolute;
+  top: -40px;
+  right: -10px;
+  border: none;
+  z-index: 300;
+  background-color: #c3dab7;
+}
+
+.mobileNav {
+  transition: left 0.5s ease;
+  background: #f6f6f6;
+  cursor: pointer;
+  height: 100vh;
+  left: -2000px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.mobileNav.expanded {
+  left: 0;
+}
+.mobileNav.expanded ul {
+  display: block;
+  position: absolute;
+  top: 10%;
+}
+.mobileNav.expanded ul li {
+  padding: 10px 0;
 }
 
 footer {
@@ -485,7 +520,7 @@ footer::before {
   content: "";
   display: block;
   position: absolute;
-  top: 70%;
+  bottom: 100px;
   height: 1px;
   width: 100%;
   background-color: #f6f6f6;
@@ -493,10 +528,12 @@ footer::before {
 footer .footerContainer {
   display: flex;
   justify-content: space-between;
-  padding-top: 5%;
+  padding-top: 50px;
 }
-footer > h3 {
-  padding: 10% 0 10% 0;
+footer > p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 10px 0 75px 0;
   text-align: center;
 }
 footer .contactUs,
@@ -504,7 +541,7 @@ footer .recentPosts,
 footer .twitterWidget {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  margin: 0 0 20px 20px;
 }
 footer .contactUs p {
   margin: 0;
@@ -860,10 +897,6 @@ footer .twitterWidget button {
     margin-top: 30px;
   }
 
-  footer::before {
-    top: 85%;
-  }
-
   footer .footerContainer {
     display: block;
     text-align: center;
@@ -873,6 +906,13 @@ footer .twitterWidget button {
   }
 }
 @media (max-width: 768px) {
+  .indexBranding .brandingImage::after {
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+    left: -35px;
+    top: -35px;
+  }
   .indexBranding .brandingContainer {
     display: block;
     width: 100%;
@@ -909,10 +949,6 @@ footer .twitterWidget button {
   .backgroundImg {
     height: 25vh;
   }
-
-  footer::before {
-    display: none;
-  }
 }
 @media (max-width: 480px) {
   header.indexHeader {
@@ -930,22 +966,8 @@ footer .twitterWidget button {
     display: none;
   }
 
-  .fa-bars,
-.fa-times-circle {
+  .mobileNavContainer button {
     display: block;
-    font-size: 1.5rem;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-
-  .hamburgerMenuDisplay ul {
-    display: none;
-  }
-
-  .javaMenu {
-    display: block;
-    margin-top: 10px;
   }
 
   .brandingContainer h2 {

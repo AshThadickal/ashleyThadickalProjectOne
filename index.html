@@ -42,17 +42,19 @@
                         <a href="contact.html">contact</a>
                     </li>
                     <li class="icon">
-                        <i class="fas fa-search" aria-hidden="true"></i>
+                        <button><i class="fas fa-search" aria-hidden="true"></i></button>
                         <span class="srOnly">Click to Search the Website</span>
                     </li>
                     <li class="icon">
-                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        <button><i class="fas fa-shopping-bag" aria-hidden="true"></i></button>
                         <span class="srOnly">Click for your Shopping Cart</span>
                     </li>
                 </ul>
+            </nav>
 
-                <i class="fa fa-bars" aria-hidden="true"></i><span class="srOnly">Click for our Navigation</span>
-                <div class="hamburgerMenuDisplay">
+            <div class="mobileNavContainer">
+                <button id="mobileButton"><i class="fa fa-bars" aria-hidden="true"></i><span class="srOnly">Click for our Navigation</span></button>
+                <nav class="mobileNav">
                     <ul>
                         <li>
                             <a href="index.html">home</a>
@@ -61,20 +63,13 @@
                             <a href="blog.html">blog</a>
                         </li>
                         <li>
-                            <a href="#portfolio">portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#shop">shop</a>
-                        </li>
-                        <li>
                             <a href="contact.html">contact</a>
                         </li>
                     </ul>
-                </div>
             </nav>
-            
-            <!-- End of Nav -->
         </div>
+            <!-- End of Nav -->
+ 
     </header>
     <!-- End of Header -->
 
@@ -118,47 +113,47 @@
         <!-- End of the Image with Summary Section -->
 
         <!-- Beginning of the Summary of Features Section -->
-        <section class="features">
-            
-            <div class="featuresContainer">
+        <section class="features">    
+
                 <!-- Each summary of feature is contained within a div -->
-                <div class="box boxA">
-                    <i class="fas fa-magic" aria-hidden="true"></i>
-                    <h3>unique design</h3>
-                    <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>
-                </div>
+                <ul class="featuresContainer">
+                    <li class="box boxA">
+                        <i class="fas fa-magic" aria-hidden="true"></i>
+                        <h3>unique design</h3>
+                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>
+                    </li>
 
-                <div class="box boxB">
-                    <i class="fas fa-map-pin" aria-hidden="true"></i>
-                    <h3>seo marketing</h3>
-                    <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>
-                </div>
+                    <li class="box boxB">
+                        <i class="fas fa-map-pin" aria-hidden="true"></i>
+                        <h3>seo marketing</h3>
+                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>
+                    </li>
 
-                <div class="box boxC">
-                    <i class="fas fa-desktop" aria-hidden="true"></i>
-                    <h3>retina ready</h3>
-                    <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>    
-                </div>
+                    <li class="box boxC">
+                        <i class="fas fa-desktop" aria-hidden="true"></i>
+                        <h3>retina ready</h3>
+                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>    
+                    </li>
 
-                <div class="box boxD">
-                    <i class="fas fa-shopping-bag" aria-hidden="true"></i>
-                    <h3>ecommerce ready</h3>
-                    <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>
-                </div>
+                    <li class="box boxD">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        <h3>ecommerce ready</h3>
+                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>
+                    </li>
 
-                <div class="box boxE">
-                    <i class="fas fa-sliders-h" aria-hidden="true"></i>
-                    <h3>advanced options</h3>
-                    <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>
-                </div>
+                    <li class="box boxE">
+                        <i class="fas fa-sliders-h" aria-hidden="true"></i>
+                        <h3>advanced options</h3>
+                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>
+                    </li>
+                    
+                    <li class="box boxF">
+                        <i class="fas fa-smile" aria-hidden="true"></i>
+                        <h3>customizable</h3>
+                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>
+                    </li>   
+                </ul>
 
-                <div class="box boxF">
-                    <i class="fas fa-smile" aria-hidden="true"></i>
-                    <h3>customizable</h3>
-                    <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging gruit burn.</p>
-                </div>   
-                 
-            </div>
             <!-- End of the features container section -->
         </section>
         <!-- End of the Features section -->
@@ -168,38 +163,38 @@
 
             <h2>meet our team</h2>
 
-            <div class="teamContainer">
-                <!-- Each compartment of the team section is contained within a div -->
-                <div class="teamPlayers">
+            <ul class="teamContainer">
+                <li class="teamPlayers">
                     <h3>team players</h3>
                     <p>Pitch client interaction design ownership disruptive leverage prototype coverstion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface.</p>
-                </div>  
+                </li>  
 
-                <div class="gridImg imgA">
+                <li class="gridImg imgA">
                     <img src="./assets/home-5.jpeg" alt="Man looking straight on to camera with a stripped shirt, grey vest and orange tie">
-                </div>
+                </li>
 
-                <div class="gridImg imgB">
+                <li class="gridImg imgB">
                     <img src="./assets/home-6.jpeg" alt="Woman looking to the left toward the camera with a black and beige patterned shirt">
-                </div>
+                </li>
 
-                <div class="gridImg imgC">
+                <li class="gridImg imgC">
                     <img src="./assets/home-7.jpeg" alt="Woman looking straight on to camera with a stripped tank top on">
-                </div>
+                </li>
 
-                <div class="gridImg imgD">
+                <li class="gridImg imgD">
                     <img src="./assets/home-8.jpeg" alt="Man looking straigt on to camera with a black shirt">
-                </div>
+                </li>
 
-                <div class="gridImg imgE">
+                <li class="gridImg imgE">
                     <img src="./assets/home-9.jpeg" alt="Woman looking on straight to camera with a grey sweater">
-                </div>
+                </li>
                 
-                <div class="workWithUs">
+                <li class="workWithUs">
                     <p>want to work <span>with us!</span></p>
-                </div>
+                </li>
+            </ul>
 
-            </div>
+
             <!-- End of the teams container section -->
         </section>
         <!-- End of the teams section -->
@@ -282,13 +277,13 @@
 
                 <form action="">
                     <label for="email" class="sr-only"></label>
-                    <input type="email" name="email" placeholder="Enter your email"><span><button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button></span>
+                    <input id="email" type="email" name="email" placeholder="Enter your email"><span><button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button></span>
                 </form>
             </div>
             <!-- End of the Twitter Widget/sign up for emails portion -->
         </section>
     
-        <h3 class="wrapper">creative agency</h3>
+        <p class="wrapper">creative agency</p>
     
     </footer>
     <!-- End of the Footer -->

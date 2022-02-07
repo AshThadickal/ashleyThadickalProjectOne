@@ -7,9 +7,12 @@ header nav {
             align-items: center;
                 li {
                     margin-left: 20%;
-                    i {
-                        margin-left: 20px; 
-                    } 
+                    button {
+                        border: none;
+                        width: 15px;
+                        height: 15px;
+                    }
+
                 }
             }
         
@@ -39,9 +42,44 @@ header nav {
         text-decoration: line-through;
     }
 
-    .fa-bars,
-    .hamburgerMenuDisplay {
-        display: none;
-    }
 
+.mobileNavContainer {
+    position: relative;
+        button {
+            display: none;
+            font-size: 1.5rem;
+            position: absolute;
+            top: -40px;
+            right: -10px;
+            border: none;
+            z-index: 300;
+            background-color: $lightSage;
+        }
+}
+
+.mobileNav {
+    transition: left 0.5s ease;
+    background: $whiteTwo;
+    cursor: pointer;
+    height: 100vh;
+    left: -2000px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+
+
+}
+
+.mobileNav.expanded {
+    left: 0;
+        ul {
+            display: block;
+            position: absolute;
+            top: 10%;
+                li {
+                    padding: 10px 0;
+                }
+        }
+}
     
