@@ -58,13 +58,13 @@ header nav {
 }
 
 .mobileNav {
-    transition: left 0.5s ease;
+    transition: top 0.5s ease;
     background: $whiteTwo;
     cursor: pointer;
     height: 100vh;
-    left: -2000px;
+    top: -1000px;
     position: fixed;
-    top: 0;
+    left: 0;
     width: 100%;
     z-index: 20;
 
@@ -72,7 +72,7 @@ header nav {
 }
 
 .mobileNav.expanded {
-    left: 0;
+    top: 0;
         ul {
             display: block;
             position: absolute;
