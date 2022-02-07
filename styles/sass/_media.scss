@@ -2,7 +2,7 @@
 @media (max-width: 1350px) {
     // adding a transparant layer to the index.html features section ** Credit to Maxine Power for suggesting this solution!
     .features {
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../../assets/home-4.jpeg)
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../assets/home-4.jpeg)
     }
 }
 
@@ -141,6 +141,10 @@
             }
     }
 
+    .features::before {
+        display: none;
+    }
+
     // changes to the index.html view portfolio section
     .viewPortfolio {
         display: block;
@@ -190,9 +194,6 @@
     .mobileNavContainer button {
         display: block;
     }
-    // .hamburgerMenuDisplay ul {
-    //     display: none;
-    // }
 
     // change to the html.index branding section
     .brandingContainer h2 {
@@ -225,42 +226,9 @@
     // changes to the index.html team section
     .ourTeam.wrapper {
         .teamContainer {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 50% 50%;
-            gap: 10px;
-                .teamPlayers {
-                    grid-column: 1;
-                    grid-row: row;
-                }
-                .imgA {
-                    grid-column: 1;
-                    grid-row: row 2;
-                }
-                
-                .imgB {
-                    grid-column: 2;
-                    grid-row: row 2;
-                }
-
-                .imgC {
-                    grid-column: 1;
-                    grid-row: row 3;
-                }
-
-                .imgD {
-                    grid-column: 2;
-                    grid-row: row 3;
-                }
-
-                .imgE {
-                    grid-column: 1;
-                    grid-row: row 4;
-                }
-
-                .workWithUs {
-                    grid-column: 2;
-                    grid-row: row 4;
-                }               
+            display: flex;
+            flex-direction: column;
+            align-items: center;               
             }
             .teamPlayers p {
                         display: none;
