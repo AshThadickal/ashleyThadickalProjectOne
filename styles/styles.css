@@ -644,7 +644,7 @@ footer .twitterWidget button {
 }
 
 .blogHeader {
-  background-image: url(../../assets/blog-1.jpeg);
+  background-image: url(../assets/blog-1.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -857,7 +857,7 @@ footer .twitterWidget button {
   width: 100%;
   margin: 0 auto;
   height: 20vh;
-  background-image: url(./../../assets/contact-1.jpeg);
+  background-image: url(./../assets/contact-1.jpeg);
   background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
