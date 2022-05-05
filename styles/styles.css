@@ -299,16 +299,11 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 10% auto 5% auto;
-  -webkit-transform: background 0.3s;
-          transform: background 0.3s;
 }
 .imageSummary div i {
   margin-top: 20%;
   height: 25px;
   width: 25px;
-}
-.imageSummary div i:hover, .imageSummary div i:focus {
-  background-color: #c3dab7;
 }
 .imageSummary div img {
   border-radius: 50%;
